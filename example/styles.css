@@ -1,0 +1,23 @@
+/* colorpallet http://paletton.com/#uid=55q0M0kllllaFw0g0qFqFg0w0aF */
+body {
+  background-color: #FFD4AA;
+}
+
+.container {
+  background-color: #BF607B;
+}
+.box {
+  background-color: #993350;
+  border: 1px solid #73132E;
+  color: #E699AF;
+}
+
+.w25 {
+  max-width: 25%;
+  min-width: 25%;
+}
+
+.w50 {
+  max-width: 50%;
+  min-width: 50%;
+}
