@@ -6,6 +6,30 @@
   flex-wrap: wrap;
 }
 
+.flexb--start {
+  justify-content: flex-start; 
+}
+
+.flexb--end {
+  justify-content: flex-end;
+}
+
+.flexb--center {
+  justify-content: center;
+}
+
+.flexb--around {
+  justify-content: space-around;
+}
+
+.flexb--between {
+  justify-content: space-between;
+}
+
+.flexi-g0 {
+  flex-grow: 0;
+}
+
 .flexi-g1 {
   flex-grow: 1; 
 }
