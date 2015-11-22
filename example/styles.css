@@ -6,6 +6,7 @@
 
 body {
   background-color: #FFD4AA;
+  color: #230339;
   padding: 24px;
 }
 
@@ -17,7 +18,8 @@ body {
 .box {
   background-color: #993350;
   border: 1px solid #73132E;
-  color: #E699AF;
+  /*color: #E699AF;*/
+  color: rgba(255,255,255,0.7);
   padding: 3px;
 }
 
