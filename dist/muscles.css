@@ -26,6 +26,19 @@
   justify-content: space-between;
 }
 
+.flexb--gutter > * {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.flexb--gutter > *:first-child {
+  margin-left: 0;
+}
+
+.flexb--gutter > *:last-child {
+  margin-right: 0;
+}
+
 .flexi-g0 {
   flex-grow: 0;
 }
