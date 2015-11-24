@@ -1,11 +1,12 @@
+/* flexbox main class */
 .flexb {
   display: flex;
 }
-
+/* flexbox flex-wrap modifier */
 .flexb--wrap {
   flex-wrap: wrap;
 }
-
+/* Flexbox justify-content modifiers */
 .flexb--start {
   justify-content: flex-start; 
 }
@@ -25,7 +26,7 @@
 .flexb--between {
   justify-content: space-between;
 }
-
+/* flexbox guttered layout modifier */
 .flexb--gutter {
   margin-left: -12px;
   margin-bottom: 12px;
@@ -34,6 +35,7 @@
 .flexb--gutter > * {
   margin-left: 12px;
 }
+/** Flexbox item properties and modifiers */
 
 /**
  * grow modifiers (grow 0 through 8)
