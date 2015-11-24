@@ -1,12 +1,9 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
 
-gulp.task('default', ['sass']);
-
-gulp.task('sass', function() {
-  return gulp.src('sass/**/*.scss')
-    .pipe(sass({
-      errLogToConsole: true
-    }))
-    .pipe(gulp.dest('dist'));
+gulp.task('css', function() {
+  return gulp.src('muscles/muscles.css')
+    .pipe(postcss([ require('postcss-import'), require('postcss-for') ]))
+    .pipe(gulp.dest('dist/'));
 });
+

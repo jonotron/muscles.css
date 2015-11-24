@@ -1,0 +1,33 @@
+/** Flexbox item properties and modifiers */
+
+/**
+ * grow modifiers (grow 0 through 8)
+ * e.g. use .flexi--g3 to set flex-grow: 3
+ */
+@for $i from 0 to 8 {
+  .flexi--g$(i) {
+    flex-grow: $i;
+  }
+}
+
+/**
+ * shrink modifiers (shrink 0 through 8)
+ * e.g. use .flexi-s1 to set flex-shrink: 1
+ */
+@for $i from 0 to 8 {
+  .flexi--s$(i) {
+    flex-shrink: $i;
+  }
+}
+
+/**
+ * basis multiple modifiers
+ *
+ * sets basis width as a multiple of the base unit (default 96px)
+ * e.g. use .flexi-b3x to set flex-basis: 288px; // 96px * 3
+ */
+@for $i from 1 to 12 {
+  .flexi--b$(i)x {
+    flex-basis: calc(96px * $i);
+  }
+}
