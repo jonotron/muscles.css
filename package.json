@@ -1,0 +1,28 @@
+{
+  "name": "muscles.css",
+  "version": "0.0.1",
+  "description": "a flexbox based modular layout css toolkit",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "postcss": "^5.0.12",
+    "postcss-for": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//jonotron/muscles.css.git"
+  },
+  "keywords": [
+    "css",
+    "flexbox"
+  ],
+  "author": "Jonathan Bowers <jonotron@gmail.com>",
+  "license": "MIT"
+}
