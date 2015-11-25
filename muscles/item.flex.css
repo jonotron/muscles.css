@@ -30,4 +30,8 @@
   .flexi--b$(i)x {
     flex-basis: calc(96px * $i);
   }
+
+  .flexb--gutter > .flexi--b$(i)x {
+    flex-basis: calc(96px * $i - 12px); 
+  }
 }

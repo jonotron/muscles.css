@@ -104,6 +104,44 @@
       <div class="box flexi--b4x flexi--g1">4x grow 1</div>
     </div>
     </div>
+
+    <h3>Guttered basis multiple consistency</h3>
+    <p>.flexi + gutters should have same width as non guttered .flexi</p>
+    <p>Note: This just aligns the start of items in a guttered .flexb, it seems
+    impossible to also align the ends</p>
+    <p>Note: You probably shouldn't mix these anyways, things get funky at the
+    small and large sides of things. if you MUST have some items align, be sure
+    to set .flexi--s0 to keep them from shrinking.</p>
+
+    <div class="container">
+      <div class="flexb flexb--gutter">
+        <div class="box flexi--b2x flexi--s0">2x w/ gutter</div>
+        <div class="box flexi--b2x">2x w/ gutter</div>
+        <div class="box flexi--b3x">3x w/ gutter</div>
+      </div>
+      <div class="flexb">
+        <div class="box flexi--b2x flexi--s0">2x w/o gutter</div>
+        <div class="box flexi--b5x">5x w/o gutter</div>
+      </div>
+    </div>
+
+    <p>Justify end</p>
+
+    <div class="container">
+      <div class="flexb flexb--gutter flexb--end">
+        <div class="box flexi--b2x flexi--s0">2x w/ gutter</div>
+        <div class="box flexi--b2x">2x w/ gutter</div>
+        <div class="box flexi--b3x">3x w/ gutter</div>
+      </div>
+
+      <div class="flexb flexb--end">
+        <div class="box flexi--b2x flexi--s0">2x w/o gutter</div>
+        <div class="box flexi--b5x">5x w/o gutter</div>
+      </div>
+
+    </div>
+
+
     
   </body>
 </html>
