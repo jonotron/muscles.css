@@ -6,6 +6,14 @@
 .flexb--wrap {
   flex-wrap: wrap;
 }
+
+.flexb--nowrap {
+  flex-wrap: nowrap;
+}
+
+.flexb--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 /* Flexbox justify-content modifiers */
 .flexb--j-start {
   justify-content: flex-start; 
