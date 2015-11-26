@@ -1,5 +1,6 @@
 @import "flexbox.css";
 @import "flexbox.wrap.css";
+@import "flexbox.direction.css";
 @import "flexbox.justify.css";
 @import "flexbox.align-items.css";
 @import "flexbox.align-content.css";

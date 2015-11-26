@@ -15,8 +15,12 @@ body {
   margin: 24px 0;
 }
 
-.container--tall {
+.container--short {
   height: 100px;
+}
+
+.container--tall {
+  height: 400px;
 }
 
 .box {
@@ -25,6 +29,10 @@ body {
   /*color: #E699AF;*/
   color: rgba(255,255,255,0.7);
   padding: 3px;
+}
+
+.box--narrow {
+  max-width: 200px;
 }
 
 .margins {
