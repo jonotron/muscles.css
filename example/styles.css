@@ -26,3 +26,11 @@ body {
 .margins {
   margin: 24px;
 }
+
+.large {
+  font-size: 24px;
+}
+
+.huge {
+  font-size: 36px;
+}
