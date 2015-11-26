@@ -15,6 +15,10 @@ body {
   margin: 24px 0;
 }
 
+.container--tall {
+  height: 100px;
+}
+
 .box {
   background-color: #993350;
   border: 1px solid #73132E;

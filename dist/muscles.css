@@ -46,6 +46,30 @@
 .flexb--ai-stretch {
   align-items: stretch;
 }
+/* Flexbox align-content modifiers */
+.flexb--ac-start {
+  align-content: flex-start;
+}
+
+.flexb--ac-end {
+  align-content: flex-end;
+}
+
+.flexb--ac-center {
+  align-content: center;
+}
+
+.flexb--ac-between {
+  align-content: space-between;
+}
+
+.flexb--ac-around {
+  align-content: space-around;
+}
+
+.flexb--ac-stretch {
+  align-content: stretch;
+}
 /* flexbox guttered layout modifier */
 .flexb--gutter {
   margin-left: -12px;
