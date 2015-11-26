@@ -1,21 +1,20 @@
 /* Flexbox justify-content modifiers */
-.flexb--start {
+.flexb--j-start {
   justify-content: flex-start; 
 }
 
-.flexb--end {
+.flexb--j-end {
   justify-content: flex-end;
 }
 
-.flexb--center {
+.flexb--j-center {
   justify-content: center;
 }
 
-.flexb--around {
+.flexb--j-around {
   justify-content: space-around;
 }
 
-.flexb--between {
+.flexb--j-between {
   justify-content: space-between;
 }
-
