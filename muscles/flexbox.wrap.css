@@ -3,3 +3,10 @@
   flex-wrap: wrap;
 }
 
+.flexb--nowrap {
+  flex-wrap: nowrap;
+}
+
+.flexb--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

@@ -15,6 +15,14 @@ body {
   margin: 24px 0;
 }
 
+.container--short {
+  height: 100px;
+}
+
+.container--tall {
+  height: 400px;
+}
+
 .box {
   background-color: #993350;
   border: 1px solid #73132E;
@@ -23,6 +31,18 @@ body {
   padding: 3px;
 }
 
+.box--narrow {
+  max-width: 200px;
+}
+
 .margins {
   margin: 24px;
+}
+
+.large {
+  font-size: 24px;
+}
+
+.huge {
+  font-size: 36px;
 }
