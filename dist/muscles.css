@@ -247,3 +247,80 @@
 .flexb--gutter > .flexi--b12x {
   flex-basis: calc(96px * 12 - 12px);
 }
+
+/**
+ * order modifiers
+ */
+.flexi--o0 {
+  order: 0;
+}
+.flexi--o1 {
+  order: 1;
+}
+.flexi--o2 {
+  order: 2;
+}
+.flexi--o3 {
+  order: 3;
+}
+.flexi--o4 {
+  order: 4;
+}
+.flexi--o5 {
+  order: 5;
+}
+.flexi--o6 {
+  order: 6;
+}
+.flexi--o7 {
+  order: 7;
+}
+.flexi--o8 {
+  order: 8;
+}
+.flexi--o9 {
+  order: 9;
+}
+.flexi--o10 {
+  order: 10;
+}
+
+.flexi--o1- {
+  order: -1;
+}
+
+.flexi--o2- {
+  order: -2;
+}
+
+.flexi--o3- {
+  order: -3;
+}
+
+.flexi--o4- {
+  order: -4;
+}
+
+.flexi--o5- {
+  order: -5;
+}
+
+.flexi--o6- {
+  order: -6;
+}
+
+.flexi--o7- {
+  order: -7;
+}
+
+.flexi--o8- {
+  order: -8;
+}
+
+.flexi--o9- {
+  order: -9;
+}
+
+.flexi--o10- {
+  order: -10;
+}
