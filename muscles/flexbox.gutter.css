@@ -1,9 +1,9 @@
 /* flexbox guttered layout modifier */
 .flexb--gutter {
-  margin-left: -12px;
-  margin-bottom: 12px;
+  margin-left: -$muscles_base_gutter;
+  margin-bottom: $muscles_base_gutter;
 }
 
 .flexb--gutter > * {
-  margin-left: 12px;
+  margin-left: $muscles_base_gutter;
 }

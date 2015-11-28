@@ -28,11 +28,11 @@
  */
 @for $i from 1 to 12 {
   .flexi--b$(i)x {
-    flex-basis: calc(96px * $i);
+    flex-basis: calc($muscles_base_basis * $i);
   }
 
   .flexb--gutter > .flexi--b$(i)x {
-    flex-basis: calc(96px * $i - 12px); 
+    flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
   }
 }
 
