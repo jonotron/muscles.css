@@ -1,5 +1,3 @@
-$muscles_base_basis: 96px;
-
 /** Flexbox item properties and modifiers */
 
 /**
@@ -34,7 +32,7 @@ $muscles_base_basis: 96px;
   }
 
   .flexb--gutter > .flexi--b$(i)x {
-    flex-basis: calc($muscles_base_basis * $i - 12px); 
+    flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
   }
 }
 
