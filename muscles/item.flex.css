@@ -36,6 +36,12 @@
   }
 }
 
+@for $i from 1 to 12 {
+  .flexi--b$(i) {
+    flex-basis: calc(100% * $i / 12);
+  }
+}
+
 /**
  * order modifiers
  */

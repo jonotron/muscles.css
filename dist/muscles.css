@@ -248,6 +248,54 @@
   flex-basis: calc(96px * 12 - 12px);
 }
 
+.flexi--b1 {
+  flex-basis: calc(100% * 1 / 12);
+}
+
+.flexi--b2 {
+  flex-basis: calc(100% * 2 / 12);
+}
+
+.flexi--b3 {
+  flex-basis: calc(100% * 3 / 12);
+}
+
+.flexi--b4 {
+  flex-basis: calc(100% * 4 / 12);
+}
+
+.flexi--b5 {
+  flex-basis: calc(100% * 5 / 12);
+}
+
+.flexi--b6 {
+  flex-basis: calc(100% * 6 / 12);
+}
+
+.flexi--b7 {
+  flex-basis: calc(100% * 7 / 12);
+}
+
+.flexi--b8 {
+  flex-basis: calc(100% * 8 / 12);
+}
+
+.flexi--b9 {
+  flex-basis: calc(100% * 9 / 12);
+}
+
+.flexi--b10 {
+  flex-basis: calc(100% * 10 / 12);
+}
+
+.flexi--b11 {
+  flex-basis: calc(100% * 11 / 12);
+}
+
+.flexi--b12 {
+  flex-basis: calc(100% * 12 / 12);
+}
+
 /**
  * order modifiers
  */
