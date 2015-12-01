@@ -248,51 +248,51 @@
   flex-basis: calc(96px * 12 - 12px);
 }
 
-.flexi--b1 {
+.flexi--b1\/12 {
   flex-basis: calc(100% * 1 / 12);
 }
 
-.flexi--b2 {
+.flexi--b2\/12 {
   flex-basis: calc(100% * 2 / 12);
 }
 
-.flexi--b3 {
+.flexi--b3\/12 {
   flex-basis: calc(100% * 3 / 12);
 }
 
-.flexi--b4 {
+.flexi--b4\/12 {
   flex-basis: calc(100% * 4 / 12);
 }
 
-.flexi--b5 {
+.flexi--b5\/12 {
   flex-basis: calc(100% * 5 / 12);
 }
 
-.flexi--b6 {
+.flexi--b6\/12 {
   flex-basis: calc(100% * 6 / 12);
 }
 
-.flexi--b7 {
+.flexi--b7\/12 {
   flex-basis: calc(100% * 7 / 12);
 }
 
-.flexi--b8 {
+.flexi--b8\/12 {
   flex-basis: calc(100% * 8 / 12);
 }
 
-.flexi--b9 {
+.flexi--b9\/12 {
   flex-basis: calc(100% * 9 / 12);
 }
 
-.flexi--b10 {
+.flexi--b10\/12 {
   flex-basis: calc(100% * 10 / 12);
 }
 
-.flexi--b11 {
+.flexi--b11\/12 {
   flex-basis: calc(100% * 11 / 12);
 }
 
-.flexi--b12 {
+.flexi--b12\/12 {
   flex-basis: calc(100% * 12 / 12);
 }
 

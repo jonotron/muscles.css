@@ -37,7 +37,7 @@
 }
 
 @for $i from 1 to 12 {
-  .flexi--b$(i) {
+  .flexi--b$(i)\/12 {
     flex-basis: calc(100% * $i / 12);
   }
 }
