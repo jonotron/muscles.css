@@ -40,11 +40,19 @@
   .flexi--b$(i)\/12 {
     flex-basis: calc(100% * $i / 12);
   }
+
+  .flexb--gutter > .flexi--b$(i)\/12 {
+    flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
+  }
 }
 
 @for $i from 1 to 6 {
   .flexi--b$(i)\/6 {
     flex-basis: calc(100% * $i / 6);
+  }
+
+  .flexb--gutter > .flexi--b$(i)\/6 {
+    flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
   }
 }
 
@@ -52,17 +60,29 @@
   .flexi--b$(i)\/4 {
     flex-basis: calc(100% * $i / 4);
   }
+
+  .flexb--gutter > .flexi--b$(i)\/4 {
+    flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
+  }
 }
 
 @for $i from 1 to 3 {
   .flexi--b$(i)\/3 {
     flex-basis: calc(100% * $i / 3);
   }
+
+  .flexb--gutter > .flexi--b$(i)\/3 {
+    flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
+  }
 }
 
 @for $i from 1 to 2 {
   .flexi--b$(i)\/2 {
     flex-basis: calc(100% * $i / 2);
+  }
+
+  .flexb--gutter > .flexi--b$(i)\/2 {
+    flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
   }
 }
 
