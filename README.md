@@ -14,8 +14,13 @@ Goals
 -----
 
 The goals of this are to provide a simple, flexible, modular set of classes
-that can be quickly added to your html. It should be as easy to use as any
-grid system.
+that can be quickly added to your html. 
+
+* be as easy to use as any common grid system
+* require very little superfluous markup (ideally none) allowing for style on 
+  flex containers and items when possible
+* be usable for general page/app layout and specific ui/component layout
+* use modular approach to css class names
 
 Todo
 ----
