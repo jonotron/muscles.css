@@ -86,6 +86,29 @@
   }
 }
 
+/* width .flexi--wNx */
+@for $i from 1 to 12 {
+  .flexi--w$(i)x {
+    width: calc($muscles_base_basis * $i); 
+  }
+}
+
+/* max-width .flexi--w<Nx (width is less than Nx) */
+@for $i from 1 to 12 {
+  .flexi--w\<$(i)x {
+    max-width: calc($muscles_base_basis * $i); 
+  }
+}
+
+/* min-width .flexi--w>Nx (width is greater than Nx) */
+@for $i from 1 to 12 {
+  .flexi--w\>$(i)x {
+    min-width: calc($muscles_base_basis * $i); 
+  }
+}
+
+
+
 /**
  * order modifiers
  */
