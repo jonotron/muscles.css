@@ -25,8 +25,8 @@ that can be quickly added to your html.
 Examples
 --------
 
-Have a look at the (example/index.html)[https://github.com/jonotron/muscles.css/blob/master/example/index.html]
-for some idea on how this is used (htmlpreview)[https://htmlpreview.github.io/?https://github.com/jonotron/muscles.css/blob/master/example/index.html]
+Have a look at the [example/index.html](https://github.com/jonotron/muscles.css/blob/master/example/index.html)
+for some idea on how this is used [htmlpreview](https://htmlpreview.github.io/?https://github.com/jonotron/muscles.css/blob/master/example/index.html)
 
 Todo
 ----
