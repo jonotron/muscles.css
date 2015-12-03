@@ -30,6 +30,7 @@
       <div class="box flexi--b12x">12x96px</div>
     </div>
 
+
     <h2>Flex basis width percentages</h2>
     <p>.flexi--b1/12 = 1/12</p>
 
@@ -61,6 +62,33 @@
       <div class="box flexi--b3/3">3/3</div>
       <div class="box flexi--b1/2">1/2</div>
       <div class="box flexi--b2/2">2/2</div>
+    </div>
+
+    <h2>Element widths</h2>
+    <p>.flexi--w4x = width: 4*96px;</p>
+    <div class="flexb flexb--wrap container">
+      <div class="box flexi--w1x">1x</div>
+      <div class="box flexi--w2x">2x</div>
+      <div class="box flexi--w3x">3x</div>
+      <div class="box flexi--w4x">4x</div>
+      <div class="box flexi--w5x">5x</div>
+      <div class="box flexi--w6x">6x</div>
+      <div class="box flexi--w7x">7x</div>
+      <div class="box flexi--w8x">8x</div>
+      <div class="box flexi--w9x">9x</div>
+      <div class="box flexi--w10x">10x</div>
+      <div class="box flexi--w11x">11x</div>
+      <div class="box flexi--w12x">12x</div>
+    </div>
+
+    <h2>Element min/max widths</h2>
+    <p>.flexi--w&gt;4x = min-width: 4*96px; (think, greater than 4x)</p>
+    <p>.flexi--w&lt;4x = max-width: 4*96px; (think, less than 4x)</p>
+
+    <div class="flexb container">
+      <div class="box flexi--w>4x flexi--w<5x flexi--g1">&gt;4x &lt;5x</div>
+      <div class="box flexi--w<1x flexi--g1">&lt;1x</div>
+      <div class="box flexi--w>3x flexi--g1">&gt;3x</div>
     </div>
 
     <h2>Flex grow</h2>
