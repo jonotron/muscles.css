@@ -22,6 +22,12 @@ that can be quickly added to your html.
 * be usable for general page/app layout and specific ui/component layout
 * use modular approach to css class names
 
+Examples
+--------
+
+Have a look at the (example/index.html)[https://github.com/jonotron/muscles.css/blob/master/example/index.html]
+for some idea on how this is used (htmlpreview)[https://htmlpreview.github.io/?https://github.com/jonotron/muscles.css/blob/master/example/index.html]
+
 Todo
 ----
 
