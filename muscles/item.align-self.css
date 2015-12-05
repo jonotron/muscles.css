@@ -1,0 +1,20 @@
+/** Flexbox item align-self modifier */
+.flex__item--start {
+  align-self: flex-start;
+}
+
+.flex__item--end {
+  align-self: flex-end;
+}
+
+.flex__item--center {
+  align-self: center;
+}
+
+.flex__item--baseline {
+  align-self: baseline;
+}
+
+.flex__item--stretch {
+  align-self: stretch;
+}
