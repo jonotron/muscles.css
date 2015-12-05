@@ -1,16 +1,16 @@
 /* flexbox flex-direction modifiers */
-.flexb--row {
+.flex--row {
   flex-direction: row;
 }
 
-.flexb--row-reverse {
+.flex--row-reverse {
   flex-direction: row-reverse;
 }
 
-.flexb--column {
+.flex--column {
   flex-direction: column;
 }
 
-.flexb--column-reverse {
+.flex--column-reverse {
   flex-direction: column-reverse;
 }
