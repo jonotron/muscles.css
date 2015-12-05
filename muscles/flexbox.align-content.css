@@ -1,24 +1,24 @@
 /* Flexbox align-content modifiers */
-.flexb--ac-start {
+.flex--ac-start {
   align-content: flex-start;
 }
 
-.flexb--ac-end {
+.flex--ac-end {
   align-content: flex-end;
 }
 
-.flexb--ac-center {
+.flex--ac-center {
   align-content: center;
 }
 
-.flexb--ac-between {
+.flex--ac-between {
   align-content: space-between;
 }
 
-.flexb--ac-around {
+.flex--ac-around {
   align-content: space-around;
 }
 
-.flexb--ac-stretch {
+.flex--ac-stretch {
   align-content: stretch;
 }

@@ -1,12 +1,12 @@
 /* flexbox flex-wrap modifier */
-.flexb--wrap {
+.flex--wrap {
   flex-wrap: wrap;
 }
 
-.flexb--nowrap {
+.flex--nowrap {
   flex-wrap: nowrap;
 }
 
-.flexb--wrap-reverse {
+.flex--wrap-reverse {
   flex-wrap: wrap-reverse;
 }

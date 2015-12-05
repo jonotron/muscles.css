@@ -1,20 +1,20 @@
 /* Flexbox align-items modifiers */
-.flexb--ai-start {
+.flex--ai-start {
   align-items: flex-start;
 }
 
-.flexb--ai-end {
+.flex--ai-end {
   align-items: flex-end;
 }
 
-.flexb--ai-center {
+.flex--ai-center {
   align-items: center;
 }
 
-.flexb--ai-baseline {
+.flex--ai-baseline {
   align-items: baseline;
 }
 
-.flexb--ai-stretch {
+.flex--ai-stretch {
   align-items: stretch;
 }

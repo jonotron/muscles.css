@@ -2,20 +2,20 @@
 
 /**
  * grow modifiers (grow 0 through 8)
- * e.g. use .flexi--g3 to set flex-grow: 3
+ * e.g. use .flex__item--g3 to set flex-grow: 3
  */
 @for $i from 0 to 8 {
-  .flexi--g$(i) {
+  .flex__item--g$(i) {
     flex-grow: $i;
   }
 }
 
 /**
  * shrink modifiers (shrink 0 through 8)
- * e.g. use .flexi-s1 to set flex-shrink: 1
+ * e.g. use .flex__item-s1 to set flex-shrink: 1
  */
 @for $i from 0 to 8 {
-  .flexi--s$(i) {
+  .flex__item--s$(i) {
     flex-shrink: $i;
   }
 }
@@ -24,97 +24,97 @@
  * basis multiple modifiers
  *
  * sets basis width as a multiple of the base unit (default 96px)
- * e.g. use .flexi-b3x to set flex-basis: 288px; // 96px * 3
+ * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
  */
 @for $i from 1 to 12 {
-  .flexi--b$(i)x {
+  .flex__item--b$(i)x {
     flex-basis: calc($muscles_base_basis * $i);
   }
 
-  .flexb--gutter > .flexi--b$(i)x {
+  .flex--gutter > .flex__item--b$(i)x {
     flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 12 {
-  .flexi--b$(i)\/12 {
+  .flex__item--b$(i)\/12 {
     flex-basis: calc(100% * $i / 12);
   }
 
-  .flexb--gutter > .flexi--b$(i)\/12 {
+  .flex--gutter > .flex__item--b$(i)\/12 {
     flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 6 {
-  .flexi--b$(i)\/6 {
+  .flex__item--b$(i)\/6 {
     flex-basis: calc(100% * $i / 6);
   }
 
-  .flexb--gutter > .flexi--b$(i)\/6 {
+  .flex--gutter > .flex__item--b$(i)\/6 {
     flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 4 {
-  .flexi--b$(i)\/4 {
+  .flex__item--b$(i)\/4 {
     flex-basis: calc(100% * $i / 4);
   }
 
-  .flexb--gutter > .flexi--b$(i)\/4 {
+  .flex--gutter > .flex__item--b$(i)\/4 {
     flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 3 {
-  .flexi--b$(i)\/3 {
+  .flex__item--b$(i)\/3 {
     flex-basis: calc(100% * $i / 3);
   }
 
-  .flexb--gutter > .flexi--b$(i)\/3 {
+  .flex--gutter > .flex__item--b$(i)\/3 {
     flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 2 {
-  .flexi--b$(i)\/2 {
+  .flex__item--b$(i)\/2 {
     flex-basis: calc(100% * $i / 2);
   }
 
-  .flexb--gutter > .flexi--b$(i)\/2 {
+  .flex--gutter > .flex__item--b$(i)\/2 {
     flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
   }
 }
 
-/* width .flexi--wNx */
+/* width .flex__item--wNx */
 @for $i from 1 to 12 {
-  .flexi--w$(i)x {
+  .flex__item--w$(i)x {
     width: calc($muscles_base_basis * $i); 
   }
 
-  .flexi--h$(i)x {
+  .flex__item--h$(i)x {
     height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* max-width .flexi--w<Nx (width is less than Nx) */
+/* max-width .flex__item--w<Nx (width is less than Nx) */
 @for $i from 1 to 12 {
-  .flexi--w\<$(i)x {
+  .flex__item--w\<$(i)x {
     max-width: calc($muscles_base_basis * $i); 
   }
 
-  .flexi--h\<$(i)x {
+  .flex__item--h\<$(i)x {
     max-height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* min-width .flexi--w>Nx (width is greater than Nx) */
+/* min-width .flex__item--w>Nx (width is greater than Nx) */
 @for $i from 1 to 12 {
-  .flexi--w\>$(i)x {
+  .flex__item--w\>$(i)x {
     min-width: calc($muscles_base_basis * $i); 
   }
 
-  .flexi--h\>$(i)x {
+  .flex__item--h\>$(i)x {
     min-height: calc($muscles_base_basis * $i); 
   }
 }
@@ -125,13 +125,13 @@
  * order modifiers
  */
 @for $i from 0 to 10 {
-  .flexi--o$(i) {
+  .flex__item--o$(i) {
     order: $i; 
   }
 }
 
 @for $i from 1 to 10 {
-  .flexi--o$(i)- {
+  .flex__item--o$(i)- {
     order: -$(i); 
   }
 }
