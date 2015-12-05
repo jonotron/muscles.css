@@ -30,24 +30,24 @@
 .flex--column-reverse {
   flex-direction: column-reverse;
 }
-/* Flexbox justify-content modifiers */
-.flex--j-start {
+/* Flexbox main axis justify-content modifiers */
+.flex--start {
   justify-content: flex-start; 
 }
 
-.flex--j-end {
+.flex--end {
   justify-content: flex-end;
 }
 
-.flex--j-center {
+.flex--center {
   justify-content: center;
 }
 
-.flex--j-around {
+.flex--around {
   justify-content: space-around;
 }
 
-.flex--j-between {
+.flex--between {
   justify-content: space-between;
 }
 /* Flexbox align-items modifiers */
