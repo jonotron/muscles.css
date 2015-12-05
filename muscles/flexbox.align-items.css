@@ -1,4 +1,4 @@
-/* Flexbox align-items modifiers */
+/* Flexbox cross axis align-items modifiers */
 .flex--ai-start {
   align-items: flex-start;
 }
