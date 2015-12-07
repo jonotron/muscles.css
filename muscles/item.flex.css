@@ -27,61 +27,61 @@
  * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
  */
 @for $i from 1 to 12 {
-  .flex__item--b$(i)x {
+  .u-fb$(i)x {
     flex-basis: calc($muscles_base_basis * $i);
   }
 
-  .flex--gutter > .flex__item--b$(i)x {
+  .flex--gutter > .u-fb$(i)x {
     flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 12 {
-  .flex__item--b$(i)\/12 {
+  .u-fb$(i)\/12 {
     flex-basis: calc(100% * $i / 12);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/12 {
+  .flex--gutter > .u-fb$(i)\/12 {
     flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 6 {
-  .flex__item--b$(i)\/6 {
+  .u-fb$(i)\/6 {
     flex-basis: calc(100% * $i / 6);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/6 {
+  .flex--gutter > .u-fb$(i)\/6 {
     flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 4 {
-  .flex__item--b$(i)\/4 {
+  .u-fb$(i)\/4 {
     flex-basis: calc(100% * $i / 4);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/4 {
+  .flex--gutter > .u-fb$(i)\/4 {
     flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 3 {
-  .flex__item--b$(i)\/3 {
+  .u-fb$(i)\/3 {
     flex-basis: calc(100% * $i / 3);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/3 {
+  .flex--gutter > .u-fb$(i)\/3 {
     flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 2 {
-  .flex__item--b$(i)\/2 {
+  .u-fb$(i)\/2 {
     flex-basis: calc(100% * $i / 2);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/2 {
+  .flex--gutter > .u-fb$(i)\/2 {
     flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
   }
 }

@@ -175,292 +175,292 @@
  * sets basis width as a multiple of the base unit (default 96px)
  * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
  */
-.flex__item--b1x {
+.u-fb1x {
   flex-basis: calc(96px * 1);
 }
-.flex--gutter > .flex__item--b1x {
+.flex--gutter > .u-fb1x {
   flex-basis: calc(96px * 1 - 12px);
 }
-.flex__item--b2x {
+.u-fb2x {
   flex-basis: calc(96px * 2);
 }
-.flex--gutter > .flex__item--b2x {
+.flex--gutter > .u-fb2x {
   flex-basis: calc(96px * 2 - 12px);
 }
-.flex__item--b3x {
+.u-fb3x {
   flex-basis: calc(96px * 3);
 }
-.flex--gutter > .flex__item--b3x {
+.flex--gutter > .u-fb3x {
   flex-basis: calc(96px * 3 - 12px);
 }
-.flex__item--b4x {
+.u-fb4x {
   flex-basis: calc(96px * 4);
 }
-.flex--gutter > .flex__item--b4x {
+.flex--gutter > .u-fb4x {
   flex-basis: calc(96px * 4 - 12px);
 }
-.flex__item--b5x {
+.u-fb5x {
   flex-basis: calc(96px * 5);
 }
-.flex--gutter > .flex__item--b5x {
+.flex--gutter > .u-fb5x {
   flex-basis: calc(96px * 5 - 12px);
 }
-.flex__item--b6x {
+.u-fb6x {
   flex-basis: calc(96px * 6);
 }
-.flex--gutter > .flex__item--b6x {
+.flex--gutter > .u-fb6x {
   flex-basis: calc(96px * 6 - 12px);
 }
-.flex__item--b7x {
+.u-fb7x {
   flex-basis: calc(96px * 7);
 }
-.flex--gutter > .flex__item--b7x {
+.flex--gutter > .u-fb7x {
   flex-basis: calc(96px * 7 - 12px);
 }
-.flex__item--b8x {
+.u-fb8x {
   flex-basis: calc(96px * 8);
 }
-.flex--gutter > .flex__item--b8x {
+.flex--gutter > .u-fb8x {
   flex-basis: calc(96px * 8 - 12px);
 }
-.flex__item--b9x {
+.u-fb9x {
   flex-basis: calc(96px * 9);
 }
-.flex--gutter > .flex__item--b9x {
+.flex--gutter > .u-fb9x {
   flex-basis: calc(96px * 9 - 12px);
 }
-.flex__item--b10x {
+.u-fb10x {
   flex-basis: calc(96px * 10);
 }
-.flex--gutter > .flex__item--b10x {
+.flex--gutter > .u-fb10x {
   flex-basis: calc(96px * 10 - 12px);
 }
-.flex__item--b11x {
+.u-fb11x {
   flex-basis: calc(96px * 11);
 }
-.flex--gutter > .flex__item--b11x {
+.flex--gutter > .u-fb11x {
   flex-basis: calc(96px * 11 - 12px);
 }
-.flex__item--b12x {
+.u-fb12x {
   flex-basis: calc(96px * 12);
 }
-.flex--gutter > .flex__item--b12x {
+.flex--gutter > .u-fb12x {
   flex-basis: calc(96px * 12 - 12px);
 }
 
-.flex__item--b1\/12 {
+.u-fb1\/12 {
   flex-basis: calc(100% * 1 / 12);
 }
 
-.flex--gutter > .flex__item--b1\/12 {
+.flex--gutter > .u-fb1\/12 {
   flex-basis: calc(100% * 1 / 12 - 12px);
 }
 
-.flex__item--b2\/12 {
+.u-fb2\/12 {
   flex-basis: calc(100% * 2 / 12);
 }
 
-.flex--gutter > .flex__item--b2\/12 {
+.flex--gutter > .u-fb2\/12 {
   flex-basis: calc(100% * 2 / 12 - 12px);
 }
 
-.flex__item--b3\/12 {
+.u-fb3\/12 {
   flex-basis: calc(100% * 3 / 12);
 }
 
-.flex--gutter > .flex__item--b3\/12 {
+.flex--gutter > .u-fb3\/12 {
   flex-basis: calc(100% * 3 / 12 - 12px);
 }
 
-.flex__item--b4\/12 {
+.u-fb4\/12 {
   flex-basis: calc(100% * 4 / 12);
 }
 
-.flex--gutter > .flex__item--b4\/12 {
+.flex--gutter > .u-fb4\/12 {
   flex-basis: calc(100% * 4 / 12 - 12px);
 }
 
-.flex__item--b5\/12 {
+.u-fb5\/12 {
   flex-basis: calc(100% * 5 / 12);
 }
 
-.flex--gutter > .flex__item--b5\/12 {
+.flex--gutter > .u-fb5\/12 {
   flex-basis: calc(100% * 5 / 12 - 12px);
 }
 
-.flex__item--b6\/12 {
+.u-fb6\/12 {
   flex-basis: calc(100% * 6 / 12);
 }
 
-.flex--gutter > .flex__item--b6\/12 {
+.flex--gutter > .u-fb6\/12 {
   flex-basis: calc(100% * 6 / 12 - 12px);
 }
 
-.flex__item--b7\/12 {
+.u-fb7\/12 {
   flex-basis: calc(100% * 7 / 12);
 }
 
-.flex--gutter > .flex__item--b7\/12 {
+.flex--gutter > .u-fb7\/12 {
   flex-basis: calc(100% * 7 / 12 - 12px);
 }
 
-.flex__item--b8\/12 {
+.u-fb8\/12 {
   flex-basis: calc(100% * 8 / 12);
 }
 
-.flex--gutter > .flex__item--b8\/12 {
+.flex--gutter > .u-fb8\/12 {
   flex-basis: calc(100% * 8 / 12 - 12px);
 }
 
-.flex__item--b9\/12 {
+.u-fb9\/12 {
   flex-basis: calc(100% * 9 / 12);
 }
 
-.flex--gutter > .flex__item--b9\/12 {
+.flex--gutter > .u-fb9\/12 {
   flex-basis: calc(100% * 9 / 12 - 12px);
 }
 
-.flex__item--b10\/12 {
+.u-fb10\/12 {
   flex-basis: calc(100% * 10 / 12);
 }
 
-.flex--gutter > .flex__item--b10\/12 {
+.flex--gutter > .u-fb10\/12 {
   flex-basis: calc(100% * 10 / 12 - 12px);
 }
 
-.flex__item--b11\/12 {
+.u-fb11\/12 {
   flex-basis: calc(100% * 11 / 12);
 }
 
-.flex--gutter > .flex__item--b11\/12 {
+.flex--gutter > .u-fb11\/12 {
   flex-basis: calc(100% * 11 / 12 - 12px);
 }
 
-.flex__item--b12\/12 {
+.u-fb12\/12 {
   flex-basis: calc(100% * 12 / 12);
 }
 
-.flex--gutter > .flex__item--b12\/12 {
+.flex--gutter > .u-fb12\/12 {
   flex-basis: calc(100% * 12 / 12 - 12px);
 }
 
-.flex__item--b1\/6 {
+.u-fb1\/6 {
   flex-basis: calc(100% * 1 / 6);
 }
 
-.flex--gutter > .flex__item--b1\/6 {
+.flex--gutter > .u-fb1\/6 {
   flex-basis: calc(100% * 1 / 6 - 12px);
 }
 
-.flex__item--b2\/6 {
+.u-fb2\/6 {
   flex-basis: calc(100% * 2 / 6);
 }
 
-.flex--gutter > .flex__item--b2\/6 {
+.flex--gutter > .u-fb2\/6 {
   flex-basis: calc(100% * 2 / 6 - 12px);
 }
 
-.flex__item--b3\/6 {
+.u-fb3\/6 {
   flex-basis: calc(100% * 3 / 6);
 }
 
-.flex--gutter > .flex__item--b3\/6 {
+.flex--gutter > .u-fb3\/6 {
   flex-basis: calc(100% * 3 / 6 - 12px);
 }
 
-.flex__item--b4\/6 {
+.u-fb4\/6 {
   flex-basis: calc(100% * 4 / 6);
 }
 
-.flex--gutter > .flex__item--b4\/6 {
+.flex--gutter > .u-fb4\/6 {
   flex-basis: calc(100% * 4 / 6 - 12px);
 }
 
-.flex__item--b5\/6 {
+.u-fb5\/6 {
   flex-basis: calc(100% * 5 / 6);
 }
 
-.flex--gutter > .flex__item--b5\/6 {
+.flex--gutter > .u-fb5\/6 {
   flex-basis: calc(100% * 5 / 6 - 12px);
 }
 
-.flex__item--b6\/6 {
+.u-fb6\/6 {
   flex-basis: calc(100% * 6 / 6);
 }
 
-.flex--gutter > .flex__item--b6\/6 {
+.flex--gutter > .u-fb6\/6 {
   flex-basis: calc(100% * 6 / 6 - 12px);
 }
 
-.flex__item--b1\/4 {
+.u-fb1\/4 {
   flex-basis: calc(100% * 1 / 4);
 }
 
-.flex--gutter > .flex__item--b1\/4 {
+.flex--gutter > .u-fb1\/4 {
   flex-basis: calc(100% * 1 / 4 - 12px);
 }
 
-.flex__item--b2\/4 {
+.u-fb2\/4 {
   flex-basis: calc(100% * 2 / 4);
 }
 
-.flex--gutter > .flex__item--b2\/4 {
+.flex--gutter > .u-fb2\/4 {
   flex-basis: calc(100% * 2 / 4 - 12px);
 }
 
-.flex__item--b3\/4 {
+.u-fb3\/4 {
   flex-basis: calc(100% * 3 / 4);
 }
 
-.flex--gutter > .flex__item--b3\/4 {
+.flex--gutter > .u-fb3\/4 {
   flex-basis: calc(100% * 3 / 4 - 12px);
 }
 
-.flex__item--b4\/4 {
+.u-fb4\/4 {
   flex-basis: calc(100% * 4 / 4);
 }
 
-.flex--gutter > .flex__item--b4\/4 {
+.flex--gutter > .u-fb4\/4 {
   flex-basis: calc(100% * 4 / 4 - 12px);
 }
 
-.flex__item--b1\/3 {
+.u-fb1\/3 {
   flex-basis: calc(100% * 1 / 3);
 }
 
-.flex--gutter > .flex__item--b1\/3 {
+.flex--gutter > .u-fb1\/3 {
   flex-basis: calc(100% * 1 / 3 - 12px);
 }
 
-.flex__item--b2\/3 {
+.u-fb2\/3 {
   flex-basis: calc(100% * 2 / 3);
 }
 
-.flex--gutter > .flex__item--b2\/3 {
+.flex--gutter > .u-fb2\/3 {
   flex-basis: calc(100% * 2 / 3 - 12px);
 }
 
-.flex__item--b3\/3 {
+.u-fb3\/3 {
   flex-basis: calc(100% * 3 / 3);
 }
 
-.flex--gutter > .flex__item--b3\/3 {
+.flex--gutter > .u-fb3\/3 {
   flex-basis: calc(100% * 3 / 3 - 12px);
 }
 
-.flex__item--b1\/2 {
+.u-fb1\/2 {
   flex-basis: calc(100% * 1 / 2);
 }
 
-.flex--gutter > .flex__item--b1\/2 {
+.flex--gutter > .u-fb1\/2 {
   flex-basis: calc(100% * 1 / 2 - 12px);
 }
 
-.flex__item--b2\/2 {
+.u-fb2\/2 {
   flex-basis: calc(100% * 2 / 2);
 }
 
-.flex--gutter > .flex__item--b2\/2 {
+.flex--gutter > .u-fb2\/2 {
   flex-basis: calc(100% * 2 / 2 - 12px);
 }
 
