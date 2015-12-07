@@ -765,22 +765,22 @@
   order: -10;
 }
 /** Flexbox item align-self modifier */
-.flex__item--start {
+.u-as-start {
   align-self: flex-start;
 }
 
-.flex__item--end {
+.u-as-end {
   align-self: flex-end;
 }
 
-.flex__item--center {
+.u-as-center {
   align-self: center;
 }
 
-.flex__item--baseline {
+.u-as-baseline {
   align-self: baseline;
 }
 
-.flex__item--stretch {
+.u-as-stretch {
   align-self: stretch;
 }
