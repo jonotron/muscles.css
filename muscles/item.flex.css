@@ -2,20 +2,20 @@
 
 /**
  * grow modifiers (grow 0 through 8)
- * e.g. use .flex__item--g3 to set flex-grow: 3
+ * e.g. use .u-fg3 to set flex-grow: 3
  */
 @for $i from 0 to 8 {
-  .flex__item--g$(i) {
+  .u-fg$(i) {
     flex-grow: $i;
   }
 }
 
 /**
  * shrink modifiers (shrink 0 through 8)
- * e.g. use .flex__item-s1 to set flex-shrink: 1
+ * e.g. use .u-fs1 to set flex-shrink: 1
  */
 @for $i from 0 to 8 {
-  .flex__item--s$(i) {
+  .u-fs$(i) {
     flex-shrink: $i;
   }
 }
@@ -27,94 +27,94 @@
  * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
  */
 @for $i from 1 to 12 {
-  .flex__item--b$(i)x {
+  .u-fb$(i)x {
     flex-basis: calc($muscles_base_basis * $i);
   }
 
-  .flex--gutter > .flex__item--b$(i)x {
+  .flex--gutter > .u-fb$(i)x {
     flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 12 {
-  .flex__item--b$(i)\/12 {
+  .u-fb$(i)\/12 {
     flex-basis: calc(100% * $i / 12);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/12 {
+  .flex--gutter > .u-fb$(i)\/12 {
     flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 6 {
-  .flex__item--b$(i)\/6 {
+  .u-fb$(i)\/6 {
     flex-basis: calc(100% * $i / 6);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/6 {
+  .flex--gutter > .u-fb$(i)\/6 {
     flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 4 {
-  .flex__item--b$(i)\/4 {
+  .u-fb$(i)\/4 {
     flex-basis: calc(100% * $i / 4);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/4 {
+  .flex--gutter > .u-fb$(i)\/4 {
     flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 3 {
-  .flex__item--b$(i)\/3 {
+  .u-fb$(i)\/3 {
     flex-basis: calc(100% * $i / 3);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/3 {
+  .flex--gutter > .u-fb$(i)\/3 {
     flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
   }
 }
 
 @for $i from 1 to 2 {
-  .flex__item--b$(i)\/2 {
+  .u-fb$(i)\/2 {
     flex-basis: calc(100% * $i / 2);
   }
 
-  .flex--gutter > .flex__item--b$(i)\/2 {
+  .flex--gutter > .u-fb$(i)\/2 {
     flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
   }
 }
 
-/* width .flex__item--wNx */
+/* width .u-wNx */
 @for $i from 1 to 12 {
-  .flex__item--w$(i)x {
+  .u-w$(i)x {
     width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h$(i)x {
+  .u-h$(i)x {
     height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* max-width .flex__item--w<Nx (width is less than Nx) */
+/* max-width .u-w<Nx (width is less than Nx) */
 @for $i from 1 to 12 {
-  .flex__item--w\<$(i)x {
+  .u-max-w$(i)x {
     max-width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h\<$(i)x {
+  .u-max-h$(i)x {
     max-height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* min-width .flex__item--w>Nx (width is greater than Nx) */
+/* min-width .u-w>Nx (width is greater than Nx) */
 @for $i from 1 to 12 {
-  .flex__item--w\>$(i)x {
+  .u-min-w$(i)x {
     min-width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h\>$(i)x {
+  .u-min-h$(i)x {
     min-height: calc($muscles_base_basis * $i); 
   }
 }
@@ -125,13 +125,13 @@
  * order modifiers
  */
 @for $i from 0 to 10 {
-  .flex__item--o$(i) {
+  .u-o$(i) {
     order: $i; 
   }
 }
 
 @for $i from 1 to 10 {
-  .flex__item--o$(i)- {
+  .u-o$(i)- {
     order: -$(i); 
   }
 }
