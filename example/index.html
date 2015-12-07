@@ -86,9 +86,9 @@
     <p>.u-w&lt;4x = max-width: 4*96px; (think, less than 4x)</p>
 
     <div class="flex container">
-      <div class="box u-w>4x u-w<5x flex__item--g1">&gt;4x &lt;5x</div>
-      <div class="box u-w<1x flex__item--g1">&lt;1x</div>
-      <div class="box u-w>3x flex__item--g1">&gt;3x</div>
+      <div class="box u-w>4x u-w<5x u-fg1">&gt;4x &lt;5x</div>
+      <div class="box u-w<1x u-fg1">&lt;1x</div>
+      <div class="box u-w>3x u-fg1">&gt;3x</div>
     </div>
 
     <h2>Element heights</h2>
@@ -104,24 +104,24 @@
 
     <h2>Flex grow</h2>
     <div class="flex container">
-      <div class="box flex__item--g1 u-fb1x">Grow 1</div>
-      <div class="box flex__item--g2 u-fb1x">Grow 2</div>
-      <div class="box flex__item--g4 u-fb1x">Grow 4</div>
-      <div class="box flex__item--g8 u-fb1x">Grow 8</div>
+      <div class="box u-fg1 u-fb1x">Grow 1</div>
+      <div class="box u-fg2 u-fb1x">Grow 2</div>
+      <div class="box u-fg4 u-fb1x">Grow 4</div>
+      <div class="box u-fg8 u-fb1x">Grow 8</div>
     </div>
 
     <h2>Flex shrink</h2>
     <div class="flex container">
-      <div class="box flex__item--s1 u-fb3x">Shrink 1</div>
-      <div class="box flex__item--s2 u-fb3x">Shrink 2</div>
-      <div class="box flex__item--s4 u-fb3x">Shrink 4</div>
-      <div class="box flex__item--s8 u-fb3x">Shrink 8</div>
+      <div class="box u-fs1 u-fb3x">Shrink 1</div>
+      <div class="box u-fs2 u-fb3x">Shrink 2</div>
+      <div class="box u-fs4 u-fb3x">Shrink 4</div>
+      <div class="box u-fs8 u-fb3x">Shrink 8</div>
     </div>
 
     <h2>Flex grow/shrink 0</h2>
     <div class="flex container">
-      <div class="box flex__item--s0 flex__item--g0 u-fb1x">Fixed</div>
-      <div class="box flex__item--g1 flex__item--s1 u-fb2x">2x width, g1, s1</div>
+      <div class="box u-fs0 u-fg0 u-fb1x">Fixed</div>
+      <div class="box u-fg1 u-fs1 u-fb2x">2x width, g1, s1</div>
     </div>
 
     <h2>Flex order</h2>
@@ -323,28 +323,28 @@
     <h2>Margins</h2>
     <p>Note: margins in flexbox do not collapse</p>
     <div class="flex container">
-      <div class="box margins flex__item--g1">Grow 1, margins</div>
-      <div class="box margins flex__item--g2">Grow 2, margins</div>
+      <div class="box margins u-fg1">Grow 1, margins</div>
+      <div class="box margins u-fg2">Grow 2, margins</div>
     </div>
 
     <h2>Guttered</h2>
     <p>Do not style the .flex element, it uses negative margins</p>
     <div class="container">
     <div class="flex flex--gutter">
-      <div class="box flex__item--g1">Grow 1</div>
-      <div class="box flex__item--g2">Grow 2</div>
-      <div class="box flex__item--g2">Grow 2</div>
-      <div class="box flex__item--g1">Grow 1</div>
+      <div class="box u-fg1">Grow 1</div>
+      <div class="box u-fg2">Grow 2</div>
+      <div class="box u-fg2">Grow 2</div>
+      <div class="box u-fg1">Grow 1</div>
     </div>
     </div>
 
     <h3>Guttered, wrapped</h3>
     <div class="container">
     <div class="flex flex--gutter flex--wrap">
-      <div class="box u-fb4x flex__item--g1">4x grow 1</div>
-      <div class="box u-fb4x flex__item--g1">4x grow 1</div>
-      <div class="box u-fb4x flex__item--g1">4x grow 1</div>
-      <div class="box u-fb4x flex__item--g1">4x grow 1</div>
+      <div class="box u-fb4x u-fg1">4x grow 1</div>
+      <div class="box u-fb4x u-fg1">4x grow 1</div>
+      <div class="box u-fb4x u-fg1">4x grow 1</div>
+      <div class="box u-fb4x u-fg1">4x grow 1</div>
     </div>
     </div>
 
@@ -367,16 +367,16 @@
     impossible to also align the ends</p>
     <p>Note: You probably shouldn't mix these anyways, things get funky at the
     small and large sides of things. if you MUST have some items align, be sure
-    to set .flex__item--s0 to keep them from shrinking.</p>
+    to set .u-fs0 to keep them from shrinking.</p>
 
     <div class="container">
       <div class="flex flex--gutter">
-        <div class="box u-fb2x flex__item--s0">2x w/ gutter</div>
+        <div class="box u-fb2x u-fs0">2x w/ gutter</div>
         <div class="box u-fb2x">2x w/ gutter</div>
         <div class="box u-fb3x">3x w/ gutter</div>
       </div>
       <div class="flex">
-        <div class="box u-fb2x flex__item--s0">2x w/o gutter</div>
+        <div class="box u-fb2x u-fs0">2x w/o gutter</div>
         <div class="box u-fb5x">5x w/o gutter</div>
       </div>
     </div>
@@ -388,15 +388,15 @@
 
     <div class="container">
       <div class="flex flex--gutter">
-        <div class="box u-fb2x flex__item--g1 flex__item--s0">2x g1</div>
-        <div class="box u-fb5x flex__item--g4 flex__item--s0">5x g4</div>
+        <div class="box u-fb2x u-fg1 u-fs0">2x g1</div>
+        <div class="box u-fb5x u-fg4 u-fs0">5x g4</div>
       </div>
 
       <div class="flex flex--gutter">
-        <div class="box u-fb1x flex__item--g1 flex__item--s0">1x g1</div>
-        <div class="box u-fb1x flex__item--g1 flex__item--s0">1x g1</div>
-        <div class="box u-fb2x flex__item--g2 flex__item--s0">2x g2</div>
-        <div class="box u-fb3x flex__item--g6 flex__item--s0">3x g6</div>
+        <div class="box u-fb1x u-fg1 u-fs0">1x g1</div>
+        <div class="box u-fb1x u-fg1 u-fs0">1x g1</div>
+        <div class="box u-fb2x u-fg2 u-fs0">2x g2</div>
+        <div class="box u-fb3x u-fg6 u-fs0">3x g6</div>
       </div>
     </div>
 
@@ -404,13 +404,13 @@
 
     <div class="container">
       <div class="flex flex--gutter flex--end">
-        <div class="box u-fb2x flex__item--s0">2x w/ gutter</div>
+        <div class="box u-fb2x u-fs0">2x w/ gutter</div>
         <div class="box u-fb2x">2x w/ gutter</div>
         <div class="box u-fb3x">3x w/ gutter</div>
       </div>
 
       <div class="flex flex--end">
-        <div class="box u-fb2x flex__item--s0">2x w/o gutter</div>
+        <div class="box u-fb2x u-fs0">2x w/o gutter</div>
         <div class="box u-fb5x">5x w/o gutter</div>
       </div>
 

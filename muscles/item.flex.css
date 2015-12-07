@@ -2,20 +2,20 @@
 
 /**
  * grow modifiers (grow 0 through 8)
- * e.g. use .flex__item--g3 to set flex-grow: 3
+ * e.g. use .u-fg3 to set flex-grow: 3
  */
 @for $i from 0 to 8 {
-  .flex__item--g$(i) {
+  .u-fg$(i) {
     flex-grow: $i;
   }
 }
 
 /**
  * shrink modifiers (shrink 0 through 8)
- * e.g. use .flex__item-s1 to set flex-shrink: 1
+ * e.g. use .u-fs1 to set flex-shrink: 1
  */
 @for $i from 0 to 8 {
-  .flex__item--s$(i) {
+  .u-fs$(i) {
     flex-shrink: $i;
   }
 }
