@@ -691,77 +691,77 @@
 /**
  * order modifiers
  */
-.flex__item--o0 {
+.u-o0 {
   order: 0;
 }
-.flex__item--o1 {
+.u-o1 {
   order: 1;
 }
-.flex__item--o2 {
+.u-o2 {
   order: 2;
 }
-.flex__item--o3 {
+.u-o3 {
   order: 3;
 }
-.flex__item--o4 {
+.u-o4 {
   order: 4;
 }
-.flex__item--o5 {
+.u-o5 {
   order: 5;
 }
-.flex__item--o6 {
+.u-o6 {
   order: 6;
 }
-.flex__item--o7 {
+.u-o7 {
   order: 7;
 }
-.flex__item--o8 {
+.u-o8 {
   order: 8;
 }
-.flex__item--o9 {
+.u-o9 {
   order: 9;
 }
-.flex__item--o10 {
+.u-o10 {
   order: 10;
 }
 
-.flex__item--o1- {
+.u-o1- {
   order: -1;
 }
 
-.flex__item--o2- {
+.u-o2- {
   order: -2;
 }
 
-.flex__item--o3- {
+.u-o3- {
   order: -3;
 }
 
-.flex__item--o4- {
+.u-o4- {
   order: -4;
 }
 
-.flex__item--o5- {
+.u-o5- {
   order: -5;
 }
 
-.flex__item--o6- {
+.u-o6- {
   order: -6;
 }
 
-.flex__item--o7- {
+.u-o7- {
   order: -7;
 }
 
-.flex__item--o8- {
+.u-o8- {
   order: -8;
 }
 
-.flex__item--o9- {
+.u-o9- {
   order: -9;
 }
 
-.flex__item--o10- {
+.u-o10- {
   order: -10;
 }
 /** Flexbox item align-self modifier */
