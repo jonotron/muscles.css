@@ -86,35 +86,35 @@
   }
 }
 
-/* width .flex__item--wNx */
+/* width .u-wNx */
 @for $i from 1 to 12 {
-  .flex__item--w$(i)x {
+  .u-w$(i)x {
     width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h$(i)x {
+  .u-h$(i)x {
     height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* max-width .flex__item--w<Nx (width is less than Nx) */
+/* max-width .u-w<Nx (width is less than Nx) */
 @for $i from 1 to 12 {
-  .flex__item--w\<$(i)x {
+  .u-w\<$(i)x {
     max-width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h\<$(i)x {
+  .u-h\<$(i)x {
     max-height: calc($muscles_base_basis * $i); 
   }
 }
 
-/* min-width .flex__item--w>Nx (width is greater than Nx) */
+/* min-width .u-w>Nx (width is greater than Nx) */
 @for $i from 1 to 12 {
-  .flex__item--w\>$(i)x {
+  .u-w\>$(i)x {
     min-width: calc($muscles_base_basis * $i); 
   }
 
-  .flex__item--h\>$(i)x {
+  .u-h\>$(i)x {
     min-height: calc($muscles_base_basis * $i); 
   }
 }
