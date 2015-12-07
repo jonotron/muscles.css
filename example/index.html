@@ -82,13 +82,13 @@
     </div>
 
     <h2>Element min/max widths</h2>
-    <p>.u-w&gt;4x = min-width: 4*96px; (think, greater than 4x)</p>
-    <p>.u-w&lt;4x = max-width: 4*96px; (think, less than 4x)</p>
+    <p>.u-min-w4x = min-width: 4*96px;</p>
+    <p>.u-max-w4x = max-width: 4*96px;</p>
 
     <div class="flex container">
-      <div class="box u-w>4x u-w<5x u-fg1">&gt;4x &lt;5x</div>
-      <div class="box u-w<1x u-fg1">&lt;1x</div>
-      <div class="box u-w>3x u-fg1">&gt;3x</div>
+      <div class="box u-min-w4x u-max-w5x u-fg1">min:4x max:5x</div>
+      <div class="box u-max-w1x u-fg1">max:1x</div>
+      <div class="box u-min-w3x u-fg1">min:3x</div>
     </div>
 
     <h2>Element heights</h2>
