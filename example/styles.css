@@ -46,3 +46,10 @@ body {
 .huge {
   font-size: 36px;
 }
+
+code {
+  background-color: #D49F6A;
+  border-radius: 3px;
+  padding: 0 3px;
+  font-size: 0.8em;
+}
