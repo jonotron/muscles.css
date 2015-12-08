@@ -10,6 +10,12 @@ body {
   padding: 24px;
 }
 
+.narrow {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container {
   background-color: #BF607B;
   margin: 24px 0;
