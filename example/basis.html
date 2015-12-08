@@ -163,5 +163,49 @@
       </div>
     </section>
 
+    <h3>Lengths vs Fractions</h3>
+
+    <p>Lengths are useful when you have different sized containers and need to
+    ensure consistent widths for your items. Using fractions or percentages 
+    would makes this impossible (or at least difficult). This would also apply 
+    when you use nested containers.
+    </p>
+
+    <section class="example">
+      <div class="container flex">
+        <div class="box u-fb2/12">2/12</div>
+        <div class="box u-fb10/12">10/12</div>
+      </div>
+      <div class="container flex container--80">
+        <div class="box u-fb2/12">2/12</div>
+        <div class="box u-fb10/12">10/12</div>
+      </div>
+    </section>
+
+    <p>In this example, in both cases each cell has the same fractional width
+    but they display at very different lengths due to the difference in the
+    container sizes. If you wanted those 2/12 cells to be the same computed
+    length, you can't use fractional or percentage widths.</p>
+
+    <p>Instead, we can use length basis and set our element to not shrink.</p>
+
+    <section class="example">
+      <div class="container flex">
+        <div class="box u-fb2x u-fs0">2x</div>
+        <div class="box u-fb10x">10x</div>
+      </div>
+      <div class="container flex container--80">
+        <div class="box u-fb2x u-fs0">2x</div>
+        <div class="box u-fb10x">10x</div>
+      </div>
+    </section>
+
+    <p>This forces the 2x element to always be 2x in width regardless of the
+    container width. You can use this do create very responsive UI without
+    breakpoints.</p>
+
+    <p>To see more examples of UI using lengths, see TODO: Link to examples</p>
+
+
   </body>
 </html>
