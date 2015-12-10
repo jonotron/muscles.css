@@ -1,0 +1,14 @@
+.card {
+  background-color: #ffffff;  
+  border: 1px solid #999999;
+  color: #222222;
+}
+
+.card__placeholder {
+  background-color: #dddddd; 
+  height: 148px;
+}
+
+.card__content {
+  padding: 12px;
+}
