@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>ui examples - Muscles.css</title>
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="utils.css" />
+
+    <link rel="stylesheet" href="../dist/muscles.css" />
+  </head>
+
+  <body><div class="narrow">
+    <h1>UI Examples</h1>
+
+    <p>Here are some examples of how you could use Muscles.css to solve various
+    ui challenges.</p>
+
+    <h2>Input boxes with consistent button controlls</h2>
+    <p>If you need text boxes with attached submit buttons where:
+      <ul>
+        <li>the text box grows/shrinks responsively</li>
+        <li>the submit button does not grow or shrink</li>
+        <li>the submit button is the same size as other similar buttons</li>
+      </ul>
+    </p>
+
+    <div class="flex u-mb">
+      <input type="text" placeholder="search" class="u-fg1">
+      <button type="button" class="u-fb2x u-fs0">Search</button>
+    </div>
+
+    <div class="flex u-mb">
+      <input type="email" placeholder="email" class="input u-fg1">
+      <button type="button" class="u-fb2x u-fs0">Create Account</button>
+    </div>
+
+    <h2>Responsive tiling cards</h2>
+
+    <p>When you have content/cards that you want to tile, but each card should
+    not shrink (but can grow)</p>
+
+    <div class="flex flex--wrap flex--gutter">
+      <div class="card u-fb3x u-fg1 u-mb">
+        <div class="card__placeholder"></div>
+        <div class="card__content">Lorem ipsum</div>
+      </div>
+      <div class="card u-fb3x u-fg1 u-mb">
+        <div class="card__placeholder"></div>
+        <div class="card__content">Lorem ipsum</div>
+      </div>
+      <div class="card u-fb3x u-fg1 u-mb">
+        <div class="card__placeholder"></div>
+        <div class="card__content">Lorem ipsum</div>
+      </div>
+      <div class="card u-fb3x u-fg1 u-mb">
+        <div class="card__placeholder"></div>
+        <div class="card__content">Lorem ipsum</div>
+      </div>
+    </div>
+
+    <p>Note: You currently need to apply bottom margin to items that need
+    vertical gutter as <code>.flex--gutter</code> does not yet support vertical
+    gutter</p>
+
+    <h2>Forms that should stack at small sizes</h2>
+
+    <div class="flex flex--wrap container--80">
+      <label class="u-fb1x u-mb">Name</label>
+      <input class="u-fb3x u-fg1 u-mb" placeholder="name">
+    </div>
+    <div class="flex flex--wrap container--80">
+      <label class="u-fb1x u-mb">Email</label>
+      <input class="u-fb3x u-fg1 u-mb" placeholder="email">
+    </div>
+    <div class="flex flex--end container--80">
+      <button class="u-fb2x">Send</button>
+    </div>
+  </div></body>
+</html>
