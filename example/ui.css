@@ -1,4 +1,8 @@
-.input {
+input {
+  padding: 6px;
+}
+
+label {
   padding: 6px;
 }
 
