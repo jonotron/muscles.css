@@ -1,3 +1,7 @@
+.input {
+  padding: 6px;
+}
+
 .card {
   background-color: #ffffff;  
   border: 1px solid #999999;
