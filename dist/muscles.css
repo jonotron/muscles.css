@@ -106,38 +106,6 @@
 /** Flexbox item properties and modifiers */
 
 /**
- * shrink modifiers (shrink 0 through 8)
- * e.g. use .u-fs1 to set flex-shrink: 1
- */
-.u-fs0 {
-  flex-shrink: 0;
-}
-.u-fs1 {
-  flex-shrink: 1;
-}
-.u-fs2 {
-  flex-shrink: 2;
-}
-.u-fs3 {
-  flex-shrink: 3;
-}
-.u-fs4 {
-  flex-shrink: 4;
-}
-.u-fs5 {
-  flex-shrink: 5;
-}
-.u-fs6 {
-  flex-shrink: 6;
-}
-.u-fs7 {
-  flex-shrink: 7;
-}
-.u-fs8 {
-  flex-shrink: 8;
-}
-
-/**
  * basis multiple modifiers
  *
  * sets basis width as a multiple of the base unit (default 96px)
@@ -762,6 +730,37 @@
 }
 .u-fg8 {
   flex-grow: 8;
+}
+/**
+ * shrink modifiers (shrink 0 through 8)
+ * e.g. use .u-fs1 to set flex-shrink: 1
+ */
+.u-fs0 {
+  flex-shrink: 0;
+}
+.u-fs1 {
+  flex-shrink: 1;
+}
+.u-fs2 {
+  flex-shrink: 2;
+}
+.u-fs3 {
+  flex-shrink: 3;
+}
+.u-fs4 {
+  flex-shrink: 4;
+}
+.u-fs5 {
+  flex-shrink: 5;
+}
+.u-fs6 {
+  flex-shrink: 6;
+}
+.u-fs7 {
+  flex-shrink: 7;
+}
+.u-fs8 {
+  flex-shrink: 8;
 }
 /** Flexbox item align-self modifier */
 .u-as-start {

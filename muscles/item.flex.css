@@ -1,16 +1,6 @@
 /** Flexbox item properties and modifiers */
 
 /**
- * shrink modifiers (shrink 0 through 8)
- * e.g. use .u-fs1 to set flex-shrink: 1
- */
-@for $i from 0 to 8 {
-  .u-fs$(i) {
-    flex-shrink: $i;
-  }
-}
-
-/**
  * basis multiple modifiers
  *
  * sets basis width as a multiple of the base unit (default 96px)
