@@ -105,6 +105,231 @@
 }
 /** Flexbox item properties and modifiers */
 
+
+
+/**
+ * order modifiers
+ */
+.u-o0 {
+  order: 0;
+}
+.u-o1 {
+  order: 1;
+}
+.u-o2 {
+  order: 2;
+}
+.u-o3 {
+  order: 3;
+}
+.u-o4 {
+  order: 4;
+}
+.u-o5 {
+  order: 5;
+}
+.u-o6 {
+  order: 6;
+}
+.u-o7 {
+  order: 7;
+}
+.u-o8 {
+  order: 8;
+}
+.u-o9 {
+  order: 9;
+}
+.u-o10 {
+  order: 10;
+}
+
+.u-o1- {
+  order: -1;
+}
+
+.u-o2- {
+  order: -2;
+}
+
+.u-o3- {
+  order: -3;
+}
+
+.u-o4- {
+  order: -4;
+}
+
+.u-o5- {
+  order: -5;
+}
+
+.u-o6- {
+  order: -6;
+}
+
+.u-o7- {
+  order: -7;
+}
+
+.u-o8- {
+  order: -8;
+}
+
+.u-o9- {
+  order: -9;
+}
+
+.u-o10- {
+  order: -10;
+}
+/**
+ * grow modifiers (grow 0 through 8)
+ * e.g. use .u-fg3 to set flex-grow: 3
+ */
+.u-fg0 {
+  flex-grow: 0;
+}
+.u-fg1 {
+  flex-grow: 1;
+}
+.u-fg2 {
+  flex-grow: 2;
+}
+.u-fg3 {
+  flex-grow: 3;
+}
+.u-fg4 {
+  flex-grow: 4;
+}
+.u-fg5 {
+  flex-grow: 5;
+}
+.u-fg6 {
+  flex-grow: 6;
+}
+.u-fg7 {
+  flex-grow: 7;
+}
+.u-fg8 {
+  flex-grow: 8;
+}
+/**
+ * shrink modifiers (shrink 0 through 8)
+ * e.g. use .u-fs1 to set flex-shrink: 1
+ */
+.u-fs0 {
+  flex-shrink: 0;
+}
+.u-fs1 {
+  flex-shrink: 1;
+}
+.u-fs2 {
+  flex-shrink: 2;
+}
+.u-fs3 {
+  flex-shrink: 3;
+}
+.u-fs4 {
+  flex-shrink: 4;
+}
+.u-fs5 {
+  flex-shrink: 5;
+}
+.u-fs6 {
+  flex-shrink: 6;
+}
+.u-fs7 {
+  flex-shrink: 7;
+}
+.u-fs8 {
+  flex-shrink: 8;
+}
+/**
+ * basis length multiple modifiers
+ *
+ * sets basis width as a multiple of the base unit (default 96px)
+ * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
+ */
+.u-fb1x {
+  flex-basis: calc(96px * 1);
+}
+.flex--gutter > .u-fb1x {
+  flex-basis: calc(96px * 1 - 12px);
+}
+.u-fb2x {
+  flex-basis: calc(96px * 2);
+}
+.flex--gutter > .u-fb2x {
+  flex-basis: calc(96px * 2 - 12px);
+}
+.u-fb3x {
+  flex-basis: calc(96px * 3);
+}
+.flex--gutter > .u-fb3x {
+  flex-basis: calc(96px * 3 - 12px);
+}
+.u-fb4x {
+  flex-basis: calc(96px * 4);
+}
+.flex--gutter > .u-fb4x {
+  flex-basis: calc(96px * 4 - 12px);
+}
+.u-fb5x {
+  flex-basis: calc(96px * 5);
+}
+.flex--gutter > .u-fb5x {
+  flex-basis: calc(96px * 5 - 12px);
+}
+.u-fb6x {
+  flex-basis: calc(96px * 6);
+}
+.flex--gutter > .u-fb6x {
+  flex-basis: calc(96px * 6 - 12px);
+}
+.u-fb7x {
+  flex-basis: calc(96px * 7);
+}
+.flex--gutter > .u-fb7x {
+  flex-basis: calc(96px * 7 - 12px);
+}
+.u-fb8x {
+  flex-basis: calc(96px * 8);
+}
+.flex--gutter > .u-fb8x {
+  flex-basis: calc(96px * 8 - 12px);
+}
+.u-fb9x {
+  flex-basis: calc(96px * 9);
+}
+.flex--gutter > .u-fb9x {
+  flex-basis: calc(96px * 9 - 12px);
+}
+.u-fb10x {
+  flex-basis: calc(96px * 10);
+}
+.flex--gutter > .u-fb10x {
+  flex-basis: calc(96px * 10 - 12px);
+}
+.u-fb11x {
+  flex-basis: calc(96px * 11);
+}
+.flex--gutter > .u-fb11x {
+  flex-basis: calc(96px * 11 - 12px);
+}
+.u-fb12x {
+  flex-basis: calc(96px * 12);
+}
+.flex--gutter > .u-fb12x {
+  flex-basis: calc(96px * 12 - 12px);
+}
+/**
+ * basis fraction modifiers
+ *
+ * sets basis width as a fraction
+ * e.g. use .u-fb5/12 to set flex-basis to be 5/12 (using calc)
+ */
+
 .u-fb1\/12 {
   flex-basis: calc(100% * 1 / 12);
 }
@@ -320,7 +545,6 @@
 .flex--gutter > .u-fb2\/2 {
   flex-basis: calc(100% * 2 / 2 - 12px);
 }
-
 /* width .u-wNx */
 .u-w1x {
   width: calc(96px * 1);
@@ -541,225 +765,6 @@
 }
 .u-min-h12x {
   min-height: calc(96px * 12);
-}
-
-
-
-/**
- * order modifiers
- */
-.u-o0 {
-  order: 0;
-}
-.u-o1 {
-  order: 1;
-}
-.u-o2 {
-  order: 2;
-}
-.u-o3 {
-  order: 3;
-}
-.u-o4 {
-  order: 4;
-}
-.u-o5 {
-  order: 5;
-}
-.u-o6 {
-  order: 6;
-}
-.u-o7 {
-  order: 7;
-}
-.u-o8 {
-  order: 8;
-}
-.u-o9 {
-  order: 9;
-}
-.u-o10 {
-  order: 10;
-}
-
-.u-o1- {
-  order: -1;
-}
-
-.u-o2- {
-  order: -2;
-}
-
-.u-o3- {
-  order: -3;
-}
-
-.u-o4- {
-  order: -4;
-}
-
-.u-o5- {
-  order: -5;
-}
-
-.u-o6- {
-  order: -6;
-}
-
-.u-o7- {
-  order: -7;
-}
-
-.u-o8- {
-  order: -8;
-}
-
-.u-o9- {
-  order: -9;
-}
-
-.u-o10- {
-  order: -10;
-}
-/**
- * grow modifiers (grow 0 through 8)
- * e.g. use .u-fg3 to set flex-grow: 3
- */
-.u-fg0 {
-  flex-grow: 0;
-}
-.u-fg1 {
-  flex-grow: 1;
-}
-.u-fg2 {
-  flex-grow: 2;
-}
-.u-fg3 {
-  flex-grow: 3;
-}
-.u-fg4 {
-  flex-grow: 4;
-}
-.u-fg5 {
-  flex-grow: 5;
-}
-.u-fg6 {
-  flex-grow: 6;
-}
-.u-fg7 {
-  flex-grow: 7;
-}
-.u-fg8 {
-  flex-grow: 8;
-}
-/**
- * shrink modifiers (shrink 0 through 8)
- * e.g. use .u-fs1 to set flex-shrink: 1
- */
-.u-fs0 {
-  flex-shrink: 0;
-}
-.u-fs1 {
-  flex-shrink: 1;
-}
-.u-fs2 {
-  flex-shrink: 2;
-}
-.u-fs3 {
-  flex-shrink: 3;
-}
-.u-fs4 {
-  flex-shrink: 4;
-}
-.u-fs5 {
-  flex-shrink: 5;
-}
-.u-fs6 {
-  flex-shrink: 6;
-}
-.u-fs7 {
-  flex-shrink: 7;
-}
-.u-fs8 {
-  flex-shrink: 8;
-}
-/**
- * basis length multiple modifiers
- *
- * sets basis width as a multiple of the base unit (default 96px)
- * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
- */
-.u-fb1x {
-  flex-basis: calc(96px * 1);
-}
-.flex--gutter > .u-fb1x {
-  flex-basis: calc(96px * 1 - 12px);
-}
-.u-fb2x {
-  flex-basis: calc(96px * 2);
-}
-.flex--gutter > .u-fb2x {
-  flex-basis: calc(96px * 2 - 12px);
-}
-.u-fb3x {
-  flex-basis: calc(96px * 3);
-}
-.flex--gutter > .u-fb3x {
-  flex-basis: calc(96px * 3 - 12px);
-}
-.u-fb4x {
-  flex-basis: calc(96px * 4);
-}
-.flex--gutter > .u-fb4x {
-  flex-basis: calc(96px * 4 - 12px);
-}
-.u-fb5x {
-  flex-basis: calc(96px * 5);
-}
-.flex--gutter > .u-fb5x {
-  flex-basis: calc(96px * 5 - 12px);
-}
-.u-fb6x {
-  flex-basis: calc(96px * 6);
-}
-.flex--gutter > .u-fb6x {
-  flex-basis: calc(96px * 6 - 12px);
-}
-.u-fb7x {
-  flex-basis: calc(96px * 7);
-}
-.flex--gutter > .u-fb7x {
-  flex-basis: calc(96px * 7 - 12px);
-}
-.u-fb8x {
-  flex-basis: calc(96px * 8);
-}
-.flex--gutter > .u-fb8x {
-  flex-basis: calc(96px * 8 - 12px);
-}
-.u-fb9x {
-  flex-basis: calc(96px * 9);
-}
-.flex--gutter > .u-fb9x {
-  flex-basis: calc(96px * 9 - 12px);
-}
-.u-fb10x {
-  flex-basis: calc(96px * 10);
-}
-.flex--gutter > .u-fb10x {
-  flex-basis: calc(96px * 10 - 12px);
-}
-.u-fb11x {
-  flex-basis: calc(96px * 11);
-}
-.flex--gutter > .u-fb11x {
-  flex-basis: calc(96px * 11 - 12px);
-}
-.u-fb12x {
-  flex-basis: calc(96px * 12);
-}
-.flex--gutter > .u-fb12x {
-  flex-basis: calc(96px * 12 - 12px);
 }
 /** Flexbox item align-self modifier */
 .u-as-start {

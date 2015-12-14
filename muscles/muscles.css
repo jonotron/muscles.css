@@ -10,4 +10,5 @@
 @import "item.shrink.css";
 @import "item.length.css";
 @import "item.fraction.css";
+@import "item.width.css";
 @import "item.align-self.css";
