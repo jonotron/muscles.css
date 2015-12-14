@@ -1,16 +1,6 @@
 /** Flexbox item properties and modifiers */
 
 /**
- * grow modifiers (grow 0 through 8)
- * e.g. use .u-fg3 to set flex-grow: 3
- */
-@for $i from 0 to 8 {
-  .u-fg$(i) {
-    flex-grow: $i;
-  }
-}
-
-/**
  * shrink modifiers (shrink 0 through 8)
  * e.g. use .u-fs1 to set flex-shrink: 1
  */

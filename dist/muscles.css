@@ -106,38 +106,6 @@
 /** Flexbox item properties and modifiers */
 
 /**
- * grow modifiers (grow 0 through 8)
- * e.g. use .u-fg3 to set flex-grow: 3
- */
-.u-fg0 {
-  flex-grow: 0;
-}
-.u-fg1 {
-  flex-grow: 1;
-}
-.u-fg2 {
-  flex-grow: 2;
-}
-.u-fg3 {
-  flex-grow: 3;
-}
-.u-fg4 {
-  flex-grow: 4;
-}
-.u-fg5 {
-  flex-grow: 5;
-}
-.u-fg6 {
-  flex-grow: 6;
-}
-.u-fg7 {
-  flex-grow: 7;
-}
-.u-fg8 {
-  flex-grow: 8;
-}
-
-/**
  * shrink modifiers (shrink 0 through 8)
  * e.g. use .u-fs1 to set flex-shrink: 1
  */
@@ -763,6 +731,37 @@
 
 .u-o10- {
   order: -10;
+}
+/**
+ * grow modifiers (grow 0 through 8)
+ * e.g. use .u-fg3 to set flex-grow: 3
+ */
+.u-fg0 {
+  flex-grow: 0;
+}
+.u-fg1 {
+  flex-grow: 1;
+}
+.u-fg2 {
+  flex-grow: 2;
+}
+.u-fg3 {
+  flex-grow: 3;
+}
+.u-fg4 {
+  flex-grow: 4;
+}
+.u-fg5 {
+  flex-grow: 5;
+}
+.u-fg6 {
+  flex-grow: 6;
+}
+.u-fg7 {
+  flex-grow: 7;
+}
+.u-fg8 {
+  flex-grow: 8;
 }
 /** Flexbox item align-self modifier */
 .u-as-start {
