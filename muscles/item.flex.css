@@ -1,55 +1,5 @@
 /** Flexbox item properties and modifiers */
 
-@for $i from 1 to 12 {
-  .u-fb$(i)\/12 {
-    flex-basis: calc(100% * $i / 12);
-  }
-
-  .flex--gutter > .u-fb$(i)\/12 {
-    flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 6 {
-  .u-fb$(i)\/6 {
-    flex-basis: calc(100% * $i / 6);
-  }
-
-  .flex--gutter > .u-fb$(i)\/6 {
-    flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 4 {
-  .u-fb$(i)\/4 {
-    flex-basis: calc(100% * $i / 4);
-  }
-
-  .flex--gutter > .u-fb$(i)\/4 {
-    flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 3 {
-  .u-fb$(i)\/3 {
-    flex-basis: calc(100% * $i / 3);
-  }
-
-  .flex--gutter > .u-fb$(i)\/3 {
-    flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 2 {
-  .u-fb$(i)\/2 {
-    flex-basis: calc(100% * $i / 2);
-  }
-
-  .flex--gutter > .u-fb$(i)\/2 {
-    flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
-  }
-}
-
 /* width .u-wNx */
 @for $i from 1 to 12 {
   .u-w$(i)x {
