@@ -1,0 +1,10 @@
+/**
+ * shrink modifiers (shrink 0 through 8)
+ * e.g. use .u-fs1 to set flex-shrink: 1
+ */
+@for $i from 0 to 8 {
+  .u-fs$(i) {
+    flex-shrink: $i;
+  }
+}
+

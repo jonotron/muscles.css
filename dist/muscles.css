@@ -105,6 +105,84 @@
 }
 /** Flexbox item properties and modifiers */
 
+
+
+/**
+ * order modifiers
+ */
+.u-o0 {
+  order: 0;
+}
+.u-o1 {
+  order: 1;
+}
+.u-o2 {
+  order: 2;
+}
+.u-o3 {
+  order: 3;
+}
+.u-o4 {
+  order: 4;
+}
+.u-o5 {
+  order: 5;
+}
+.u-o6 {
+  order: 6;
+}
+.u-o7 {
+  order: 7;
+}
+.u-o8 {
+  order: 8;
+}
+.u-o9 {
+  order: 9;
+}
+.u-o10 {
+  order: 10;
+}
+
+.u-o1- {
+  order: -1;
+}
+
+.u-o2- {
+  order: -2;
+}
+
+.u-o3- {
+  order: -3;
+}
+
+.u-o4- {
+  order: -4;
+}
+
+.u-o5- {
+  order: -5;
+}
+
+.u-o6- {
+  order: -6;
+}
+
+.u-o7- {
+  order: -7;
+}
+
+.u-o8- {
+  order: -8;
+}
+
+.u-o9- {
+  order: -9;
+}
+
+.u-o10- {
+  order: -10;
+}
 /**
  * grow modifiers (grow 0 through 8)
  * e.g. use .u-fg3 to set flex-grow: 3
@@ -136,7 +214,6 @@
 .u-fg8 {
   flex-grow: 8;
 }
-
 /**
  * shrink modifiers (shrink 0 through 8)
  * e.g. use .u-fs1 to set flex-shrink: 1
@@ -168,9 +245,8 @@
 .u-fs8 {
   flex-shrink: 8;
 }
-
 /**
- * basis multiple modifiers
+ * basis length multiple modifiers
  *
  * sets basis width as a multiple of the base unit (default 96px)
  * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
@@ -247,6 +323,12 @@
 .flex--gutter > .u-fb12x {
   flex-basis: calc(96px * 12 - 12px);
 }
+/**
+ * basis fraction modifiers
+ *
+ * sets basis width as a fraction
+ * e.g. use .u-fb5/12 to set flex-basis to be 5/12 (using calc)
+ */
 
 .u-fb1\/12 {
   flex-basis: calc(100% * 1 / 12);
@@ -463,7 +545,6 @@
 .flex--gutter > .u-fb2\/2 {
   flex-basis: calc(100% * 2 / 2 - 12px);
 }
-
 /* width .u-wNx */
 .u-w1x {
   width: calc(96px * 1);
@@ -684,85 +765,6 @@
 }
 .u-min-h12x {
   min-height: calc(96px * 12);
-}
-
-
-
-/**
- * order modifiers
- */
-.u-o0 {
-  order: 0;
-}
-.u-o1 {
-  order: 1;
-}
-.u-o2 {
-  order: 2;
-}
-.u-o3 {
-  order: 3;
-}
-.u-o4 {
-  order: 4;
-}
-.u-o5 {
-  order: 5;
-}
-.u-o6 {
-  order: 6;
-}
-.u-o7 {
-  order: 7;
-}
-.u-o8 {
-  order: 8;
-}
-.u-o9 {
-  order: 9;
-}
-.u-o10 {
-  order: 10;
-}
-
-.u-o1- {
-  order: -1;
-}
-
-.u-o2- {
-  order: -2;
-}
-
-.u-o3- {
-  order: -3;
-}
-
-.u-o4- {
-  order: -4;
-}
-
-.u-o5- {
-  order: -5;
-}
-
-.u-o6- {
-  order: -6;
-}
-
-.u-o7- {
-  order: -7;
-}
-
-.u-o8- {
-  order: -8;
-}
-
-.u-o9- {
-  order: -9;
-}
-
-.u-o10- {
-  order: -10;
 }
 /** Flexbox item align-self modifier */
 .u-as-start {

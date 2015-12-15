@@ -1,0 +1,16 @@
+/**
+ * basis length multiple modifiers
+ *
+ * sets basis width as a multiple of the base unit (default 96px)
+ * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
+ */
+@for $i from 1 to 12 {
+  .u-fb$(i)x {
+    flex-basis: calc($muscles_base_basis * $i);
+  }
+
+  .flex--gutter > .u-fb$(i)x {
+    flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
+  }
+}
+
