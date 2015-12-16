@@ -28,6 +28,13 @@ Examples
 Have a look at the [example/index.html](https://github.com/jonotron/muscles.css/blob/master/example/index.html)
 for some idea on how this is used [htmlpreview](https://htmlpreview.github.io/?https://github.com/jonotron/muscles.css/blob/master/example/index.html)
 
+Recommended Reading
+-------------------
+
+[Building and shipping functional CSS](https://blog.colepeters.com/building-and-shipping-functional-css/) is a great overview of the value of functional, single purpose CSS classes including several real world examples and objective stats.
+
+[More transparent UI code with namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) introduces the concept of CSS class namespaces (e.g. the utility namespace used frequently in muscles.css)
+
 Todo
 ----
 
