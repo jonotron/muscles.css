@@ -30,4 +30,107 @@
     min-height: calc($muscles_base_basis * $i); 
   }
 }
+@media (--sm-viewport) {
+  /* width .u-wNx */
+  @for $i from 1 to 12 {
+    .u-w$(i)x\@sm {
+      width: calc($muscles_base_basis * $i); 
+    }
 
+    .u-h$(i)x\@sm {
+      height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* max-width .u-w<Nx (width is less than Nx) */
+  @for $i from 1 to 12 {
+    .u-max-w$(i)x\@sm {
+      max-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-max-h$(i)x\@sm {
+      max-height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* min-width .u-w>Nx (width is greater than Nx) */
+  @for $i from 1 to 12 {
+    .u-min-w$(i)x\@sm {
+      min-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-min-h$(i)x\@sm {
+      min-height: calc($muscles_base_basis * $i); 
+    }
+  }
+}
+
+@media (--md-viewport) {
+  /* width .u-wNx */
+  @for $i from 1 to 12 {
+    .u-w$(i)x\@md {
+      width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-h$(i)x\@md {
+      height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* max-width .u-w<Nx (width is less than Nx) */
+  @for $i from 1 to 12 {
+    .u-max-w$(i)x\@md {
+      max-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-max-h$(i)x\@md {
+      max-height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* min-width .u-w>Nx (width is greater than Nx) */
+  @for $i from 1 to 12 {
+    .u-min-w$(i)x\@md {
+      min-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-min-h$(i)x\@md {
+      min-height: calc($muscles_base_basis * $i); 
+    }
+  }
+}
+
+@media (--lg-viewport) {
+  /* width .u-wNx */
+  @for $i from 1 to 12 {
+    .u-w$(i)x\@lg {
+      width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-h$(i)x\@lg {
+      height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* max-width .u-w<Nx (width is less than Nx) */
+  @for $i from 1 to 12 {
+    .u-max-w$(i)x\@lg {
+      max-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-max-h$(i)x\@lg {
+      max-height: calc($muscles_base_basis * $i); 
+    }
+  }
+
+  /* min-width .u-w>Nx (width is greater than Nx) */
+  @for $i from 1 to 12 {
+    .u-min-w$(i)x\@lg {
+      min-width: calc($muscles_base_basis * $i); 
+    }
+
+    .u-min-h$(i)x\@lg {
+      min-height: calc($muscles_base_basis * $i); 
+    }
+  }
+}
