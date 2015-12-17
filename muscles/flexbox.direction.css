@@ -14,3 +14,57 @@
 .flex--column-reverse {
   flex-direction: column-reverse;
 }
+
+@media (--sm-viewport) {
+  .flex--row\@sm {
+    flex-direction: row;
+  }
+
+  .flex--row-reverse\@sm {
+    flex-direction: row-reverse;
+  }
+
+  .flex--column\@sm {
+    flex-direction: column;
+  }
+
+  .flex--column-reverse\@sm {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (--md-viewport) {
+  .flex--row\@md {
+    flex-direction: row;
+  }
+
+  .flex--row-reverse\@md {
+    flex-direction: row-reverse;
+  }
+
+  .flex--column\@md {
+    flex-direction: column;
+  }
+
+  .flex--column-reverse\@md {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (--lg-viewport) {
+  .flex--row\@lg {
+    flex-direction: row;
+  }
+
+  .flex--row-reverse\@lg {
+    flex-direction: row-reverse;
+  }
+
+  .flex--column\@lg {
+    flex-direction: column;
+  }
+
+  .flex--column-reverse\@lg {
+    flex-direction: column-reverse;
+  }
+}
