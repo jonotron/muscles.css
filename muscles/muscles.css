@@ -1,3 +1,4 @@
+@import "settings.css";
 @import "flexbox.css";
 @import "flexbox.wrap.css";
 @import "flexbox.direction.css";
@@ -7,6 +8,7 @@
 @import "flexbox.gutter.css";
 @import "item.grow.css";
 @import "item.shrink.css";
+@import "item.order.css";
 @import "item.length.css";
 @import "item.fraction.css";
 @import "item.width.css";

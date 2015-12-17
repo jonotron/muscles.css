@@ -8,3 +8,26 @@
   }
 }
 
+@media (--sm-viewport) {
+  @for $i from 0 to 8 {
+    .u-fg$(i)\@sm {
+      flex-grow: $i;
+    }
+  }
+}
+
+@media (--md-viewport) {
+  @for $i from 0 to 8 {
+    .u-fg$(i)\@md {
+      flex-grow: $i;
+    }
+  }
+}
+
+@media (--lg-viewport) {
+  @for $i from 0 to 8 {
+    .u-fg$(i)\@lg {
+      flex-grow: $i;
+    }
+  }
+}

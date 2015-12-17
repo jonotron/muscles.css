@@ -22,3 +22,81 @@
 .flex--ac-stretch {
   align-content: stretch;
 }
+
+@media (--sm-viewport) {
+  .flex--ac-start\@sm {
+    align-content: flex-start;
+  }
+
+  .flex--ac-end\@sm {
+    align-content: flex-end;
+  }
+
+  .flex--ac-center\@sm {
+    align-content: center;
+  }
+
+  .flex--ac-between\@sm {
+    align-content: space-between;
+  }
+
+  .flex--ac-around\@sm {
+    align-content: space-around;
+  }
+
+  .flex--ac-stretch\@sm {
+    align-content: stretch;
+  }
+}
+
+@media (--md-viewport) {
+  .flex--ac-start\@md {
+    align-content: flex-start;
+  }
+
+  .flex--ac-end\@md {
+    align-content: flex-end;
+  }
+
+  .flex--ac-center\@md {
+    align-content: center;
+  }
+
+  .flex--ac-between\@md {
+    align-content: space-between;
+  }
+
+  .flex--ac-around\@md {
+    align-content: space-around;
+  }
+
+  .flex--ac-stretch\@md {
+    align-content: stretch;
+  }
+}
+
+@media (--lg-viewport) {
+  .flex--ac-start\@lg {
+    align-content: flex-start;
+  }
+
+  .flex--ac-end\@lg {
+    align-content: flex-end;
+  }
+
+  .flex--ac-center\@lg {
+    align-content: center;
+  }
+
+  .flex--ac-between\@lg {
+    align-content: space-between;
+  }
+
+  .flex--ac-around\@lg {
+    align-content: space-around;
+  }
+
+  .flex--ac-stretch\@lg {
+    align-content: stretch;
+  }
+}

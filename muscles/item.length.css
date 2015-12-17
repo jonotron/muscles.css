@@ -14,3 +14,38 @@
   }
 }
 
+@media (--sm-viewport) {
+  @for $i from 1 to 12 {
+    .u-fb$(i)x\@sm {
+      flex-basis: calc($muscles_base_basis * $i);
+    }
+
+    .flex--gutter > .u-fb$(i)x\@sm {
+      flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
+    }
+  }
+}
+
+@media (--md-viewport) {
+  @for $i from 1 to 12 {
+    .u-fb$(i)x\@md {
+      flex-basis: calc($muscles_base_basis * $i);
+    }
+
+    .flex--gutter > .u-fb$(i)x\@md {
+      flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
+    }
+  }
+}
+
+@media (--lg-viewport) {
+  @for $i from 1 to 12 {
+    .u-fb$(i)x\@lg {
+      flex-basis: calc($muscles_base_basis * $i);
+    }
+
+    .flex--gutter > .u-fb$(i)x\@lg {
+      flex-basis: calc($muscles_base_basis * $i - $muscles_base_gutter); 
+    }
+  }
+}
