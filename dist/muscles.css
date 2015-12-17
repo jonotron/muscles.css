@@ -255,6 +255,96 @@
 .u-fs8 {
   flex-shrink: 8;
 }
+
+@media (min-width:320px) and (max-width:640px) {
+  .u-fs0\@sm {
+    flex-shrink: 0;
+  }
+  .u-fs1\@sm {
+    flex-shrink: 1;
+  }
+  .u-fs2\@sm {
+    flex-shrink: 2;
+  }
+  .u-fs3\@sm {
+    flex-shrink: 3;
+  }
+  .u-fs4\@sm {
+    flex-shrink: 4;
+  }
+  .u-fs5\@sm {
+    flex-shrink: 5;
+  }
+  .u-fs6\@sm {
+    flex-shrink: 6;
+  }
+  .u-fs7\@sm {
+    flex-shrink: 7;
+  }
+  .u-fs8\@sm {
+    flex-shrink: 8;
+  }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+  .u-fs0\@md {
+    flex-shrink: 0;
+  }
+  .u-fs1\@md {
+    flex-shrink: 1;
+  }
+  .u-fs2\@md {
+    flex-shrink: 2;
+  }
+  .u-fs3\@md {
+    flex-shrink: 3;
+  }
+  .u-fs4\@md {
+    flex-shrink: 4;
+  }
+  .u-fs5\@md {
+    flex-shrink: 5;
+  }
+  .u-fs6\@md {
+    flex-shrink: 6;
+  }
+  .u-fs7\@md {
+    flex-shrink: 7;
+  }
+  .u-fs8\@md {
+    flex-shrink: 8;
+  }
+}
+
+@media (min-width:960px) {
+  .u-fs0\@lg {
+    flex-shrink: 0;
+  }
+  .u-fs1\@lg {
+    flex-shrink: 1;
+  }
+  .u-fs2\@lg {
+    flex-shrink: 2;
+  }
+  .u-fs3\@lg {
+    flex-shrink: 3;
+  }
+  .u-fs4\@lg {
+    flex-shrink: 4;
+  }
+  .u-fs5\@lg {
+    flex-shrink: 5;
+  }
+  .u-fs6\@lg {
+    flex-shrink: 6;
+  }
+  .u-fs7\@lg {
+    flex-shrink: 7;
+  }
+  .u-fs8\@lg {
+    flex-shrink: 8;
+  }
+}
 /**
  * order modifiers
  */

@@ -8,3 +8,26 @@
   }
 }
 
+@media (--sm-viewport) {
+  @for $i from 0 to 8 {
+    .u-fs$(i)\@sm {
+      flex-shrink: $i;
+    }
+  }
+}
+
+@media (--md-viewport) {
+  @for $i from 0 to 8 {
+    .u-fs$(i)\@md {
+      flex-shrink: $i;
+    }
+  }
+}
+
+@media (--lg-viewport) {
+  @for $i from 0 to 8 {
+    .u-fs$(i)\@lg {
+      flex-shrink: $i;
+    }
+  }
+}
