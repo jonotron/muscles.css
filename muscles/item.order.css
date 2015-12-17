@@ -12,3 +12,46 @@
     order: -$(i); 
   }
 }
+
+@media (--sm-viewport) {
+  @for $i from 0 to 10 {
+    .u-o$(i)\@sm {
+      order: $i; 
+    }
+  }
+
+  @for $i from 1 to 10 {
+    .u-o$(i)-\@sm {
+      order: -$(i); 
+    }
+  }
+}
+
+@media (--md-viewport) {
+  @for $i from 0 to 10 {
+    .u-o$(i)\@md {
+      order: $i; 
+    }
+  }
+
+  @for $i from 1 to 10 {
+    .u-o$(i)-\@md {
+      order: -$(i); 
+    }
+  }
+}
+
+@media (--lg-viewport) {
+  @for $i from 0 to 10 {
+    .u-o$(i)\@lg {
+      order: $i; 
+    }
+  }
+
+  @for $i from 1 to 10 {
+    .u-o$(i)-\@lg {
+      order: -$(i); 
+    }
+  }
+}
+
