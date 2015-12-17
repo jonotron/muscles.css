@@ -10,7 +10,8 @@ gulp.task('css', function() {
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-for'),
-    require('postcss-simple-vars')({ variables: vars }) // must come after postcss-for
+    require('postcss-simple-vars')({ variables: vars }), // must come after postcss-for
+    require('css-mqpacker')
   ];
   return gulp.src('muscles/muscles.css')
     .pipe(postcss(processors))
