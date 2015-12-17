@@ -18,3 +18,69 @@
 .flex--ai-stretch {
   align-items: stretch;
 }
+
+@media (--sm-viewport) {
+  .flex--ai-start\@sm {
+    align-items: flex-start;
+  }
+
+  .flex--ai-end\@sm {
+    align-items: flex-end;
+  }
+
+  .flex--ai-center\@sm {
+    align-items: center;
+  }
+
+  .flex--ai-baseline\@sm {
+    align-items: baseline;
+  }
+
+  .flex--ai-stretch\@sm {
+    align-items: stretch;
+  }
+}
+
+@media (--md-viewport) {
+  .flex--ai-start\@md {
+    align-items: flex-start;
+  }
+
+  .flex--ai-end\@md {
+    align-items: flex-end;
+  }
+
+  .flex--ai-center\@md {
+    align-items: center;
+  }
+
+  .flex--ai-baseline\@md {
+    align-items: baseline;
+  }
+
+  .flex--ai-stretch\@md {
+    align-items: stretch;
+  }
+}
+
+@media (--lg-viewport) {
+  .flex--ai-start\@lg {
+    align-items: flex-start;
+  }
+
+  .flex--ai-end\@lg {
+    align-items: flex-end;
+  }
+
+  .flex--ai-center\@lg {
+    align-items: center;
+  }
+
+  .flex--ai-baseline\@lg {
+    align-items: baseline;
+  }
+
+  .flex--ai-stretch\@lg {
+    align-items: stretch;
+  }
+}
