@@ -8,6 +8,7 @@ gulp.task('css', function() {
   };
   var processors = [
     require('postcss-import'),
+    require('postcss-custom-media'),
     require('postcss-for'),
     require('postcss-simple-vars')({ variables: vars }) // must come after postcss-for
   ];
