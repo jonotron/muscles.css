@@ -147,30 +147,39 @@
  * shrink modifiers (shrink 0 through 8)
  * e.g. use .u-fs1 to set flex-shrink: 1
  */
+
 .u-fs0 {
   flex-shrink: 0;
 }
+
 .u-fs1 {
   flex-shrink: 1;
 }
+
 .u-fs2 {
   flex-shrink: 2;
 }
+
 .u-fs3 {
   flex-shrink: 3;
 }
+
 .u-fs4 {
   flex-shrink: 4;
 }
+
 .u-fs5 {
   flex-shrink: 5;
 }
+
 .u-fs6 {
   flex-shrink: 6;
 }
+
 .u-fs7 {
   flex-shrink: 7;
 }
+
 .u-fs8 {
   flex-shrink: 8;
 }
