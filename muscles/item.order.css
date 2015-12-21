@@ -1,57 +1,31 @@
 /**
  * order modifiers
  */
-@for $i from 0 to 10 {
-  .u-o$(i) {
-    order: $i; 
-  }
-}
-
-@for $i from 1 to 10 {
-  .u-o$(i)- {
-    order: -$(i); 
-  }
-}
-
-@media (--sm-viewport) {
+@define-mixin order $resp {
   @for $i from 0 to 10 {
-    .u-o$(i)\@sm {
+    .u-o$(i)$(resp) {
       order: $i; 
     }
   }
 
   @for $i from 1 to 10 {
-    .u-o$(i)-\@sm {
-      order: -$(i); 
+    .u-o$(i)-$(resp) {
+      order: -$(i);
     }
   }
+
+}
+
+@mixin order {}
+
+@media (--sm-viewport) {
+  @mixin order \@sm {}
 }
 
 @media (--md-viewport) {
-  @for $i from 0 to 10 {
-    .u-o$(i)\@md {
-      order: $i; 
-    }
-  }
-
-  @for $i from 1 to 10 {
-    .u-o$(i)-\@md {
-      order: -$(i); 
-    }
-  }
+  @mixin order \@md {}
 }
 
 @media (--lg-viewport) {
-  @for $i from 0 to 10 {
-    .u-o$(i)\@lg {
-      order: $i; 
-    }
-  }
-
-  @for $i from 1 to 10 {
-    .u-o$(i)-\@lg {
-      order: -$(i); 
-    }
-  }
+  @mixin order \@lg {}
 }
-

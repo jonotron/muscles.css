@@ -177,36 +177,47 @@
 /**
  * order modifiers
  */
+
 .u-o0 {
   order: 0;
 }
+
 .u-o1 {
   order: 1;
 }
+
 .u-o2 {
   order: 2;
 }
+
 .u-o3 {
   order: 3;
 }
+
 .u-o4 {
   order: 4;
 }
+
 .u-o5 {
   order: 5;
 }
+
 .u-o6 {
   order: 6;
 }
+
 .u-o7 {
   order: 7;
 }
+
 .u-o8 {
   order: 8;
 }
+
 .u-o9 {
   order: 9;
 }
+
 .u-o10 {
   order: 10;
 }
