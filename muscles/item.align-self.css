@@ -1,86 +1,42 @@
 /** Flexbox item align-self modifier */
-.u-as-start {
-  align-self: flex-start;
-}
-
-.u-as-end {
-  align-self: flex-end;
-}
-
-.u-as-center {
-  align-self: center;
-}
-
-.u-as-baseline {
-  align-self: baseline;
-}
-
-.u-as-stretch {
-  align-self: stretch;
-}
-
-@media (--sm-viewport) {
-  .u-as-start\@sm {
+@define-mixin align-self $resp {
+  .u-as-start$(resp) {
     align-self: flex-start;
   }
 
-  .u-as-end\@sm {
+  .u-as-end$(resp) {
     align-self: flex-end;
   }
 
-  .u-as-center\@sm {
+  .u-as-center$(resp) {
     align-self: center;
   }
 
-  .u-as-baseline\@sm {
+  .u-as-baseline$(resp) {
     align-self: baseline;
   }
 
-  .u-as-stretch\@sm {
+  .u-as-stretch$(resp) {
     align-self: stretch;
+  }
+}
+
+@mixin align-self {
+
+}
+
+@media(--sm-viewport) {
+  @mixin align-self \@sm {
+
   }
 }
 
 @media (--md-viewport) {
-  .u-as-start\@md {
-    align-self: flex-start;
-  }
-
-  .u-as-end\@md {
-    align-self: flex-end;
-  }
-
-  .u-as-center\@md {
-    align-self: center;
-  }
-
-  .u-as-baseline\@md {
-    align-self: baseline;
-  }
-
-  .u-as-stretch\@md {
-    align-self: stretch;
+  @mixin align-self \@md {
   }
 }
 
 @media (--lg-viewport) {
-  .u-as-start\@lg {
-    align-self: flex-start;
-  }
-
-  .u-as-end\@lg {
-    align-self: flex-end;
-  }
-
-  .u-as-center\@lg {
-    align-self: center;
-  }
-
-  .u-as-baseline\@lg {
-    align-self: baseline;
-  }
-
-  .u-as-stretch\@lg {
-    align-self: stretch;
+  @mixin align-self \@lg {
   }
 }
