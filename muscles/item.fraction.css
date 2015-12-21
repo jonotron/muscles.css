@@ -5,240 +5,76 @@
  * e.g. use .u-fb5/12 to set flex-basis to be 5/12 (using calc)
  */
 
-@for $i from 1 to 12 {
-  .u-fb$(i)\/12 {
-    flex-basis: calc(100% * $i / 12);
-  }
-
-  .flex--gutter > .u-fb$(i)\/12 {
-    flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 6 {
-  .u-fb$(i)\/6 {
-    flex-basis: calc(100% * $i / 6);
-  }
-
-  .flex--gutter > .u-fb$(i)\/6 {
-    flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 4 {
-  .u-fb$(i)\/4 {
-    flex-basis: calc(100% * $i / 4);
-  }
-
-  .flex--gutter > .u-fb$(i)\/4 {
-    flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 3 {
-  .u-fb$(i)\/3 {
-    flex-basis: calc(100% * $i / 3);
-  }
-
-  .flex--gutter > .u-fb$(i)\/3 {
-    flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
-  }
-}
-
-@for $i from 1 to 2 {
-  .u-fb$(i)\/2 {
-    flex-basis: calc(100% * $i / 2);
-  }
-
-  .flex--gutter > .u-fb$(i)\/2 {
-    flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
-  }
-}
-
-.u-fb1\/1 {
-  flex-basis: 100%;
-}
-
-.flex--gutter > .u-fb1\/1 {
-  flex-basis: calc(100% - $muscles_base_gutter);
-}
-
-@media (--sm-viewport) {
+@define-mixin u-fraction $resp {
   @for $i from 1 to 12 {
-    .u-fb$(i)\/12\@sm {
+    .u-fb$(i)\/12$(resp) {
       flex-basis: calc(100% * $i / 12);
     }
 
-    .flex--gutter > .u-fb$(i)\/12\@sm {
+    .flex--gutter > .u-fb$(i)\/12$(resp) {
       flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
     }
   }
 
   @for $i from 1 to 6 {
-    .u-fb$(i)\/6\@sm {
+    .u-fb$(i)\/6$(resp) {
       flex-basis: calc(100% * $i / 6);
     }
 
-    .flex--gutter > .u-fb$(i)\/6\@sm {
+    .flex--gutter > .u-fb$(i)\/6$(resp) {
       flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
     }
   }
 
   @for $i from 1 to 4 {
-    .u-fb$(i)\/4\@sm {
+    .u-fb$(i)\/4$(resp) {
       flex-basis: calc(100% * $i / 4);
     }
 
-    .flex--gutter > .u-fb$(i)\/4\@sm {
+    .flex--gutter > .u-fb$(i)\/4$(resp) {
       flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
     }
   }
 
   @for $i from 1 to 3 {
-    .u-fb$(i)\/3\@sm {
+    .u-fb$(i)\/3$(resp) {
       flex-basis: calc(100% * $i / 3);
     }
 
-    .flex--gutter > .u-fb$(i)\/3\@sm {
+    .flex--gutter > .u-fb$(i)\/3$(resp) {
       flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
     }
   }
 
   @for $i from 1 to 2 {
-    .u-fb$(i)\/2\@sm {
+    .u-fb$(i)\/2$(resp) {
       flex-basis: calc(100% * $i / 2);
     }
 
-    .flex--gutter > .u-fb$(i)\/2\@sm {
+    .flex--gutter > .u-fb$(i)\/2$(resp) {
       flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
     }
   }
 
-  .u-fb1\/1\@sm {
+  .u-fb1\/1$(resp) {
     flex-basis: 100%;
   }
 
-  .flex--gutter > .u-fb1\/1\@sm {
+  .flex--gutter > .u-fb1\/1$(resp) {
     flex-basis: calc(100% - $muscles_base_gutter);
   }
+}
+
+@mixin u-fraction { }
+
+@media (--sm-viewport) {
+  @mixin u-fraction \@sm { }
 }
 
 @media (--md-viewport) {
-  @for $i from 1 to 12 {
-    .u-fb$(i)\/12\@md {
-      flex-basis: calc(100% * $i / 12);
-    }
-
-    .flex--gutter > .u-fb$(i)\/12\@md {
-      flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 6 {
-    .u-fb$(i)\/6\@md {
-      flex-basis: calc(100% * $i / 6);
-    }
-
-    .flex--gutter > .u-fb$(i)\/6\@md {
-      flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 4 {
-    .u-fb$(i)\/4\@md {
-      flex-basis: calc(100% * $i / 4);
-    }
-
-    .flex--gutter > .u-fb$(i)\/4\@md {
-      flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 3 {
-    .u-fb$(i)\/3\@md {
-      flex-basis: calc(100% * $i / 3);
-    }
-
-    .flex--gutter > .u-fb$(i)\/3\@md {
-      flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 2 {
-    .u-fb$(i)\/2\@md {
-      flex-basis: calc(100% * $i / 2);
-    }
-
-    .flex--gutter > .u-fb$(i)\/2\@md {
-      flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
-    }
-  }
-
-  .u-fb1\/1\@md {
-    flex-basis: 100%;
-  }
-
-  .flex--gutter > .u-fb1\/1\@md {
-    flex-basis: calc(100% - $muscles_base_gutter);
-  }
+  @mixin u-fraction \@md { }
 }
 
 @media (--lg-viewport) {
-  @for $i from 1 to 12 {
-    .u-fb$(i)\/12\@lg {
-      flex-basis: calc(100% * $i / 12);
-    }
-
-    .flex--gutter > .u-fb$(i)\/12\@lg {
-      flex-basis: calc(100% * $i / 12 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 6 {
-    .u-fb$(i)\/6\@lg {
-      flex-basis: calc(100% * $i / 6);
-    }
-
-    .flex--gutter > .u-fb$(i)\/6\@lg {
-      flex-basis: calc(100% * $i / 6 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 4 {
-    .u-fb$(i)\/4\@lg {
-      flex-basis: calc(100% * $i / 4);
-    }
-
-    .flex--gutter > .u-fb$(i)\/4\@lg {
-      flex-basis: calc(100% * $i / 4 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 3 {
-    .u-fb$(i)\/3\@lg {
-      flex-basis: calc(100% * $i / 3);
-    }
-
-    .flex--gutter > .u-fb$(i)\/3\@lg {
-      flex-basis: calc(100% * $i / 3 - $muscles_base_gutter); 
-    }
-  }
-
-  @for $i from 1 to 2 {
-    .u-fb$(i)\/2\@lg {
-      flex-basis: calc(100% * $i / 2);
-    }
-
-    .flex--gutter > .u-fb$(i)\/2\@lg {
-      flex-basis: calc(100% * $i / 2 - $muscles_base_gutter); 
-    }
-  }
-
-  .u-fb1\/1\@lg {
-    flex-basis: 100%;
-  }
-
-  .flex--gutter > .u-fb1\/1\@lg {
-    flex-basis: calc(100% - $muscles_base_gutter);
-  }
+  @mixin u-fraction \@lg { }
 }
