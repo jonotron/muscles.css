@@ -2,32 +2,24 @@
  * grow modifiers (grow 0 through 8)
  * e.g. use .u-fg3 to set flex-grow: 3
  */
-@for $i from 0 to 8 {
-  .u-fg$(i) {
-    flex-grow: $i;
-  }
-}
-
-@media (--sm-viewport) {
+@define-mixin grow $resp {
   @for $i from 0 to 8 {
-    .u-fg$(i)\@sm {
+    .u-fg$(i)$(resp) {
       flex-grow: $i;
     }
   }
+}
+
+@mixin grow {}
+
+@media (--sm-viewport) {
+  @mixin grow \@sm {}
 }
 
 @media (--md-viewport) {
-  @for $i from 0 to 8 {
-    .u-fg$(i)\@md {
-      flex-grow: $i;
-    }
-  }
+  @mixin grow \@md {}
 }
 
 @media (--lg-viewport) {
-  @for $i from 0 to 8 {
-    .u-fg$(i)\@lg {
-      flex-grow: $i;
-    }
-  }
+  @mixin grow \@lg {}
 }
