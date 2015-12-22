@@ -12,6 +12,7 @@ gulp.task('css', function() {
     require('postcss-mixins'),
     require('postcss-for'),
     require('postcss-simple-vars')({ variables: vars }), // must come after postcss-for
+    require('postcss-discard-comments'),
     require('css-mqpacker')
   ];
   return gulp.src('muscles/muscles.css')
