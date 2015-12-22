@@ -32,8 +32,9 @@
   flex-direction: column-reverse;
 }
 /* Flexbox main axis justify-content modifiers */
+
 .flex--start {
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .flex--end {
