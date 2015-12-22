@@ -15,7 +15,17 @@ makes sense to use in a wrapped container (`.flex--wrap`)
 | `.flex--ac-around`  | `align-content: space-around;`  |
 | `.flex--ac-stretch` | `align-content: stretch;`       |
 
+
+```example:html
+<div class="flex flex--wrap flex--ac-start">
+  <div class="u-fb1x">1x</div>
+  <div class="u-fb2x">2x</div>
+  <div class="u-fb12x">12x</div>
+</div>
+```
+
 */
+
 @define-mixin align-content $resp {
   .flex--ac-start$(resp) {
     align-content: flex-start;
