@@ -6,13 +6,21 @@ gulp.task('css', function() {
     muscles_base_basis: '96px',
     muscles_base_gutter: '12px'
   };
+  var theme = {
+    title: 'Muscles.css docs',
+    examples: {
+      css: ['../dist/muscles.css']
+    }
+  };
   var processors = [
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-mixins'),
     require('postcss-for'),
     require('postcss-simple-vars')({ variables: vars }), // must come after postcss-for
-    require('mdcss'),
+    require('mdcss')({
+      theme: require('mdcss-theme-github')(theme)
+    }),
     require('postcss-discard-comments'),
     require('css-mqpacker')
   ];
