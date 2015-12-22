@@ -1,70 +1,32 @@
 /* flexbox flex-direction modifiers */
-.flex--row {
-  flex-direction: row;
-}
-
-.flex--row-reverse {
-  flex-direction: row-reverse;
-}
-
-.flex--column {
-  flex-direction: column;
-}
-
-.flex--column-reverse {
-  flex-direction: column-reverse;
-}
-
-@media (--sm-viewport) {
-  .flex--row\@sm {
+@define-mixin direction $resp {
+  .flex--row$(resp) {
     flex-direction: row;
   }
 
-  .flex--row-reverse\@sm {
+  .flex--row-reverse$(resp) {
     flex-direction: row-reverse;
   }
 
-  .flex--column\@sm {
+  .flex--column$(resp) {
     flex-direction: column;
   }
 
-  .flex--column-reverse\@sm {
+  .flex--column-reverse$(resp) {
     flex-direction: column-reverse;
   }
+}
+
+@mixin direction {}
+
+@media (--sm-viewport) {
+  @mixin direction \@sm {}
 }
 
 @media (--md-viewport) {
-  .flex--row\@md {
-    flex-direction: row;
-  }
-
-  .flex--row-reverse\@md {
-    flex-direction: row-reverse;
-  }
-
-  .flex--column\@md {
-    flex-direction: column;
-  }
-
-  .flex--column-reverse\@md {
-    flex-direction: column-reverse;
-  }
+  @mixin direction \@md {}
 }
 
 @media (--lg-viewport) {
-  .flex--row\@lg {
-    flex-direction: row;
-  }
-
-  .flex--row-reverse\@lg {
-    flex-direction: row-reverse;
-  }
-
-  .flex--column\@lg {
-    flex-direction: column;
-  }
-
-  .flex--column-reverse\@lg {
-    flex-direction: column-reverse;
-  }
+  @mixin direction \@lg {}
 }
