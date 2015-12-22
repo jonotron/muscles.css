@@ -2,32 +2,24 @@
  * shrink modifiers (shrink 0 through 8)
  * e.g. use .u-fs1 to set flex-shrink: 1
  */
-@for $i from 0 to 8 {
-  .u-fs$(i) {
-    flex-shrink: $i;
-  }
-}
-
-@media (--sm-viewport) {
+@define-mixin shrink $resp {
   @for $i from 0 to 8 {
-    .u-fs$(i)\@sm {
+    .u-fs$(i)$(resp) {
       flex-shrink: $i;
     }
   }
+}
+
+@mixin shrink {}
+
+@media (--sm-viewport) {
+  @mixin shrink \@sm {}
 }
 
 @media (--md-viewport) {
-  @for $i from 0 to 8 {
-    .u-fs$(i)\@md {
-      flex-shrink: $i;
-    }
-  }
+  @mixin shrink \@md {}
 }
 
 @media (--lg-viewport) {
-  @for $i from 0 to 8 {
-    .u-fs$(i)\@lg {
-      flex-shrink: $i;
-    }
-  }
+  @mixin shrink \@lg {}
 }
