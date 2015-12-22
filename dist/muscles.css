@@ -3,6 +3,7 @@
   display: flex;
 }
 /* flexbox flex-wrap modifier */
+
 .flex--wrap {
   flex-wrap: wrap;
 }

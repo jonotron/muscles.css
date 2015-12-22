@@ -1,54 +1,28 @@
 /* flexbox flex-wrap modifier */
-.flex--wrap {
-  flex-wrap: wrap;
-}
-
-.flex--nowrap {
-  flex-wrap: nowrap;
-}
-
-.flex--wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
-
-@media (--sm-viewport) {
-  .flex--wrap\@sm {
+@define-mixin wrap $resp {
+  .flex--wrap$(resp) {
     flex-wrap: wrap;
   }
 
-  .flex--nowrap\@sm {
+  .flex--nowrap$(resp) {
     flex-wrap: nowrap;
   }
 
-  .flex--wrap-reverse\@sm {
+  .flex--wrap-reverse$(resp) {
     flex-wrap: wrap-reverse;
   }
+}
+
+@mixin wrap {}
+
+@media (--sm-viewport) {
+  @mixin wrap \@sm {}
 }
 
 @media (--md-viewport) {
-  .flex--wrap\@md {
-    flex-wrap: wrap;
-  }
-
-  .flex--nowrap\@md {
-    flex-wrap: nowrap;
-  }
-
-  .flex--wrap-reverse\@md {
-    flex-wrap: wrap-reverse;
-  }
+  @mixin wrap \@md {}
 }
 
 @media (--lg-viewport) {
-  .flex--wrap\@lg {
-    flex-wrap: wrap;
-  }
-
-  .flex--nowrap\@lg {
-    flex-wrap: nowrap;
-  }
-
-  .flex--wrap-reverse\@lg {
-    flex-wrap: wrap-reverse;
-  }
+  @mixin wrap \@lg {}
 }
