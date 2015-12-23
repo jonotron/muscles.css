@@ -17,7 +17,7 @@ makes sense to use in a wrapped container (`.flex--wrap`)
 
 
 ```example:html
-<div class="flex flex--wrap flex--ac-start">
+<div class="flex flex--wrap flex--ac-end">
   <div class="u-fb1x">1x</div>
   <div class="u-fb2x">2x</div>
   <div class="u-fb12x">12x</div>
