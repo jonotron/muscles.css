@@ -1,4 +1,42 @@
-/* flexbox guttered layout modifier */
+/*---
+title:    gutter
+section:  Flex container
+---
+
+By default, flex items within a `.flex` container do not have any margin
+between them. You can add a __gutter__ by adding the `.flex--gutter` to the
+container element. This will add a margin (set to the `$muscles_base_gutter`
+variable that can be overridden with postcss) to the flex items.
+
+**Note**: `.flex--gutter` currently only supports horizontal gutters, not
+vertical gutters. This is because of the goal to minimize the need for markup
+that is purely for layout.
+
+```example:html
+<div class="flex flex--gutter">
+  <div class="u-fg1">Grow 1</div>
+  <div class="u-fg1">Grow 1</div>
+  <div class="u-fg1">Grow 1</div>
+</div>
+```
+
+`.flex--gutter` also works well with [wrapped items](#flex-wrap) 
+(`.flex--wrap`)
+
+```example:html
+<div class="flex flex--wrap flex--gutter">
+  <div class="u-fb4x u-fg1">Grow 1</div>
+  <div class="u-fb4x u-fg1">Grow 1</div>
+  <div class="u-fb4x u-fg1">Grow 1</div>
+  <div class="u-fb4x u-fg1">Grow 1</div>
+</div>
+```
+
+If you need to add vertical gutter remember these things:
+- margins to not collapse in flex containers
+- `.flex` is difficult to style
+
+*/
 .flex--gutter {
   margin-left: -$muscles_base_gutter;
   margin-bottom: $muscles_base_gutter;

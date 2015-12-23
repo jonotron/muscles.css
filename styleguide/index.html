@@ -34,6 +34,11 @@
 					
 				</li>
 				
+				<li>
+					<a href="#gutter"><span>gutter</span></a>
+					
+				</li>
+				
 	</ul>
 	
 				</li>
@@ -175,10 +180,45 @@ makes sense to use in a wrapped container (<code>.flex--wrap</code>)</p>
 			</div>
 		</section>
 		
+		<section id="gutter">
+			<h3>gutter</h3>
+			<div>
+				<p>By default, flex items within a <code>.flex</code> container do not have any margin
+between them. You can add a <strong>gutter</strong> by adding the <code>.flex--gutter</code> to the
+container element. This will add a margin (set to the <code>$muscles_base_gutter</code>
+variable that can be overridden with postcss) to the flex items.</p>
+<p><strong>Note</strong>: <code>.flex--gutter</code> currently only supports horizontal gutters, not
+vertical gutters. This is because of the goal to minimize the need for markup
+that is purely for layout.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--gutter&quot;&gt;
+  &lt;div class=&quot;u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+  &lt;div class=&quot;u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+  &lt;div class=&quot;u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><code>.flex--gutter</code> also works well with <a href="#flex-wrap">wrapped items</a> 
+(<code>.flex--wrap</code>)</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--wrap flex--gutter&quot;&gt;
+  &lt;div class=&quot;u-fb4x u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x u-fg1&quot;&gt;Grow 1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>If you need to add vertical gutter remember these things:</p>
+<ul>
+<li>margins to not collapse in flex containers</li>
+<li><code>.flex</code> is difficult to style</li>
+</ul>
+
+				
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 10:30
+			</div>
+		</section>
+		
+	<footer>Last modified Wednesday, 23 December 2015 10:45
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
