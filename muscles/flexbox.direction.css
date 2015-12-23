@@ -1,4 +1,19 @@
-/* flexbox flex-direction modifiers */
+/*---
+title:    flex-direction
+section:  Flex container
+---
+
+`flex-direction` modifiers can be used to change the direction of flex items
+within the `.flex` container.
+
+```example:html
+<div class="flex flex--row-reverse">
+  <div>1st item</div>
+  <div>2nd item</div>
+</div>
+```
+
+*/
 @define-mixin direction $resp {
   .flex--row$(resp) {
     flex-direction: row;
