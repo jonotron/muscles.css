@@ -4,6 +4,95 @@
  * sets basis width as a multiple of the base unit (default 96px)
  * e.g. use .flex__item-b3x to set flex-basis: 288px; // 96px * 3
  */
+/*---
+title: basis length
+section: Flex items
+---
+
+Sometimes, you want to use actual lengths for your items (e.g. when styling 
+layout for UI components). Muscles.css provides basis modifiers that specify a 
+specific length basis as a multiple of a base unit. This provides consistency 
+in your items as needed across any container size.
+ 
+You can use `.u-fb3x` to set the flex-basis to 3*96px = 288px (the 
+default base unit is 96px). Muscles provides multiples from 1x (96px) to 12x 
+(1152px).
+
+```example:html
+<div class="flex">
+  <div class="u-fb1x">.u-fb1x</div>
+  <div class="u-fb2x">.u-fb2x</div>
+  <div class="u-fb3x">.u-fb3x</div>
+  <div class="u-fb4x">.u-fb4x</div>
+</div>
+```
+
+Just as with fractional widths, flex items default to `shrink: 1` so they will 
+always shrink if there is not enough room to contain them.
+
+```example:html
+<div class="flex">
+  <div class="u-fb8x">.u-fb8x</div>
+  <div class="u-fb4x">.u-fb4x</div>
+  <div class="u-fb6x">.u-fb6x</div>
+</div>
+```
+
+Setting `.flex--wrap` will cause the items to wrap if there is not 
+enough room. Similar to fractional basis, it gives more consistency in flex 
+item widths.
+    
+
+```example:html
+<div class="flex flex--wrap">
+  <div class="u-fb4x">.u-fb4x</div>
+  <div class="u-fb5x">.u-fb5x</div>
+  <div class="u-fb2x">.u-fb2x</div>
+  <div class="u-fb3x">.u-fb3x</div>
+</div>
+```
+
+#### Lengths vs Fractions
+
+Lengths are useful when you have different sized containers and need to ensure 
+consistent widths for your items. Using fractions or percentages would makes 
+this impossible (or at least difficult). This would also apply when you use 
+nested containers.
+
+```example:html
+<div class="flex">
+  <div class="u-fb2/12">2/12</div>
+  <div class="u-fb10/12">10/12</div>
+</div>
+<div class="flex container--80">
+  <div class="u-fb2/12">2/12</div>
+  <div class="u-fb10/12">10/12</div>
+</div>
+```
+
+In this example, in both cases each cell has the same fractional width but 
+they display at very different lengths due to the difference in the container 
+sizes. If you wanted those 2/12 cells to be the same computed length, you 
+can't use fractional or percentage widths.
+
+Instead, we can use length basis and set our element to not shrink.
+    
+```example:html
+<div class="flex">
+  <div class="u-fb2x u-fs0">2x</div>
+  <div class="u-fb10x">10x</div>
+</div>
+<div class="flex container--80">
+  <div class="u-fb2x u-fs0">2x</div>
+  <div class="u-fb10x">10x</div>
+</div>
+```
+This forces the 2x element to always be 2x in width regardless of the 
+container width. You can use this do create very responsive UI without 
+breakpoints.
+
+*/
+
 @define-mixin lengthMultiple $resp {
   @for $i from 1 to 12 {
     .u-fb$(i)x$(resp) {

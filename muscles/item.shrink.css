@@ -1,7 +1,22 @@
-/**
- * shrink modifiers (shrink 0 through 8)
- * e.g. use .u-fs1 to set flex-shrink: 1
- */
+/*---
+title:    shrink
+section:  Flex items
+---
+
+Flex items have a default of `shrink: 0`, you can change that with the
+shrink utility classes. You can set shrink from `0` to `8`.
+
+```example:html
+<div class="flex">
+  <div class="u-fs1 u-fb3x">Shrink 1</div>
+  <div class="u-fs2 u-fb3x">Shrink 2</div>
+  <div class="u-fs4 u-fb3x">Shrink 4</div>
+  <div class="u-fs8 u-fb3x">Shrink 8</div>
+</div>
+```
+
+*/
+
 @define-mixin shrink $resp {
   @for $i from 0 to 8 {
     .u-fs$(i)$(resp) {

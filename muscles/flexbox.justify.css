@@ -1,4 +1,27 @@
-/* Flexbox main axis justify-content modifiers */
+/*---
+title:    justify-content
+section:  Flex container
+---
+
+`justify-content` modifiers set where remaining space should be distributed
+among flex items in a `.flex` container.
+
+| class            | property                           |
+| ---              | ---                                |
+| `.flex--start`   | `justify-content: flex-start; `    |
+| `.flex--end`     | `justify-content: flex-end; `      |
+| `.flex--center`  | `justify-content: center; `        |
+| `.flex--around`  | `justify-content: space-around; `  |
+| `.flex--between` | `justify-content: space-between; ` |
+
+```example:html
+<div class="flex flex--around">
+  <div class="u-fb1x">1x</div>
+  <div class="u-fb1x">1x</div>
+</div>
+```
+
+*/
 @define-mixin justify-content $resp {
   .flex--start$(resp) {
     justify-content: flex-start; 

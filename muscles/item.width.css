@@ -1,4 +1,50 @@
-/* width .u-wNx */
+/*---
+title: width and height
+section: Flex items
+---
+
+In addition to [length](#basis-length) and [fractions](#basis-fractions) 
+Muscles.css also supports setting `width` and `height` properties as multiples
+
+```example:html
+<div class="flex flex--wrap">
+  <div class="u-w1x">1x</div>
+  <div class="u-w2x">2x</div>
+  <div class="u-w3x">3x</div>
+  <div class="u-w4x">4x</div>
+  <div class="u-w5x">5x</div>
+  <div class="u-w6x">6x</div>
+  <div class="u-w7x">7x</div>
+  <div class="u-w8x">8x</div>
+  <div class="u-w9x">9x</div>
+  <div class="u-w10x">10x</div>
+  <div class="u-w11x">11x</div>
+  <div class="u-w12x">12x</div>
+</div>
+```
+
+```example:html
+<div class="flex flex--wrap flex--column">
+  <div class="u-h1x u-w2x">1x</div>
+  <div class="u-h2x u-w2x">2x</div>
+  <div class="u-h3x u-w2x">3x</div>
+</div>
+```
+
+Muscles.css also provides min/max width/height attributes which is very useful
+for UIs that should grow or shrink from their defaults but never more or less
+than certain extremes.
+
+```example:html
+<div class="flex">
+  <div class="u-min-w4x u-max-w5x u-fg1">min:4x max:5x</div>
+  <div class="u-max-w1x u-fg1">max:1x</div>
+  <div class="u-min-w3x u-fg1">min:3x</div>
+</div>
+```
+
+*/
+
 @define-mixin widthMultiple $resp {
   @for $i from 1 to 12 {
     .u-w$(i)x$(resp) {

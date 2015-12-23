@@ -1,9 +1,73 @@
-/**
- * basis fraction modifiers
- *
- * sets basis width as a fraction
- * e.g. use .u-fb5/12 to set flex-basis to be 5/12 (using calc)
- */
+/*---
+title: basis fractions
+section: Flex items
+---
+
+Use fraction basis utilities to set a proportional basis. This is most like
+other grid based layout systems you might be accustomed to (e.g.
+[bootstrap grid](http://getbootstrap.com/css/#grid)). It allows you to set
+the basis of items as a fraction of 12 (and a few other denomitators).
+
+Muscles.css provides the following fractions:
+- 12ths (e.g. `.u-fb1/12`)
+- 6ths (e.g. `.u-fb1/6`)
+- 4ths (e.g. `.u-fb1/4`)
+- 3rds (e.g. `.u-fb1/3`)
+- 2nds (e.g. `.u-fb1/2`)
+- and a whole (`.u-fb1/1`)
+
+```example:html
+<div class="flex">
+  <div class="u-fb1/12">.u-fb1/12</div>
+  <div class="u-fb2/12">.u-fb2/12</div>
+  <div class="u-fb3/12">.u-fb3/12</div>
+  <div class="u-fb4/12">.u-fb4/12</div>
+</div>
+```
+
+Notice that the items always maintain their fractional widths relative to the 
+container. This is useful when you want to maintain a consistent ratio in your 
+layout.
+
+You can use any combination of fractions as long as they sum to < 1. 
+E.g. 1/2 + 1/6 + 1/3 = 1
+    
+```example:html
+<div class="flex">
+  <div class="u-fb1/2">.u-fb1/2</div>
+  <div class="u-fb1/6">.u-fb1/6</div>
+  <div class="u-fb1/3">.u-fb1/3</div>
+</div>
+```
+
+If you have items that sum to more than 1, you end up with shrinking items. 
+This is because flex items default to `shrink: 1`. This prevents overflow, but 
+does not ensure consistency.
+
+```example:html
+<div class="flex">
+  <div class="u-fb2/3">.u-fb2/3</div>
+  <div class="u-fb1/3">.u-fb1/3</div>
+  <div class="u-fb1/3">.u-fb1/3</div>
+</div>
+```
+
+Using `.flex--wrap` on the container allows your items to wrap to the next line 
+if there is not enough room on the current line.  This allows for more 
+responsive layouts.
+    
+```example:html
+<div class="flex flex--wrap">
+  <div class="u-fb2/3">.u-fb2/3</div>
+  <div class="u-fb1/3">.u-fb1/3</div>
+  <div class="u-fb1/3">.u-fb1/3</div>
+</div>
+```
+
+This will maintain relative fractional widths and remain consistent, while 
+eliminating the need to define separate rows.
+    
+*/
 
 @define-mixin u-fraction $resp {
   @for $i from 1 to 12 {

@@ -1,4 +1,20 @@
-/* flexbox main class */
+/*---
+title: Container
+section: Flex container
+---
+
+To start using Muscles.css you need to use the `.flex` class on the container
+element that will be flexing.
+
+```example:html
+<div class="flex">
+  <div class="u-fb1x">1x</div>
+  <div class="u-fb1x">1x</div>
+</div>
+```
+
+*/
+
 .flex {
   display: flex;
 }

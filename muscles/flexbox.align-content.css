@@ -1,4 +1,31 @@
-/* Flexbox cross axis line align-content modifiers */
+/*---
+title:      align-content
+section:    Flex container
+---
+
+`align-content` modifiers are used on a `.flex` element and typically only
+makes sense to use in a wrapped container (`.flex--wrap`)
+
+| class               | property                        |
+|---------------------|---------------------------------|
+| `.flex--ac-start`   | `align-content: flex-start;`    |
+| `.flex--ac-end`     | `align-content: flex-end;`      |
+| `.flex--ac-center`  | `align-content: center:`        |
+| `.flex--ac-between` | `align-content: space-between;` |
+| `.flex--ac-around`  | `align-content: space-around;`  |
+| `.flex--ac-stretch` | `align-content: stretch;`       |
+
+
+```example:html
+<div class="flex flex--wrap flex--ac-end">
+  <div class="u-fb1x">1x</div>
+  <div class="u-fb2x">2x</div>
+  <div class="u-fb12x">12x</div>
+</div>
+```
+
+*/
+
 @define-mixin align-content $resp {
   .flex--ac-start$(resp) {
     align-content: flex-start;

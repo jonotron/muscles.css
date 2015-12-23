@@ -1,4 +1,29 @@
-/* flexbox flex-wrap modifier */
+/*---
+title: flex-wrap
+section: Flex container
+---
+
+`flex-wrap` modifiers set how items that exceed the demensions of their axis
+are wrapped (or not wrapped).
+
+| class                 | property                   |
+| ---                   | ---                        |
+| `.flex--wrap`         | `flex-wrap: wrap;`         |
+| `.flex--nowrap`       | `flex-wrap: nowrap;`       |
+| `.flex--wrap-reverse` | `flex-wrap: wrap-reverse;` |
+
+```example:html
+<div class="flex flex--wrap">
+  <div class="u-fb1x">1x</div>
+  <div class="u-fb2x">2x</div>
+  <div class="u-fb3x">3x</div>
+  <div class="u-fb4x">4x</div>
+  <div class="u-fb5x">5x</div>
+  <div class="u-fb6x">6x</div>
+</div>
+```
+
+*/
 @define-mixin wrap $resp {
   .flex--wrap$(resp) {
     flex-wrap: wrap;

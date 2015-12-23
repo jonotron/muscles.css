@@ -1,4 +1,28 @@
-/* Flexbox cross axis align-items modifiers */
+/*---
+title:    align-items
+section:  Flex container
+---
+
+`align-items` modifiers are used on a `.flex` element to align flex items along
+the cross axis
+
+| class                | property                   |
+| ---                  | ---                        |
+| `.flex--ai-start`    | `align-items: flex-start;` |
+| `.flex--ai-end`      | `align-items: flex-end;`   |
+| `.flex--ai-center`   | `align-items: center;`     |
+| `.flex--ai-baseline` | `align-items: baseline;`   |
+| `.flex--ai-stretch`  | `align-items: stretch;`    |
+
+
+```example:html
+<div class="flex flex--ai-center">
+  <div class="u-fb1x">1x with a bit of content for added height</div>
+  <div class="u-fb2x">2x</div>
+</div>
+```
+
+*/
 @define-mixin align-items $resp {
   .flex--ai-start$(resp) {
     align-items: flex-start;

@@ -1,4 +1,32 @@
-/** Flexbox item align-self modifier */
+/*---
+title:    align-self
+section:  Flex items
+---
+
+`align-self` modifiers allow items to override any 
+[`align-items` modifer](#align-items) set on the `.flex` container
+
+| class            | property                  |
+| ---              | ---                       |
+| `.u-as-start`    | `align-self: flex-start;` |
+| `.u-as-end`      | `align-self: flex-end;`   |
+| `.u-as-center`   | `align-self: center;`     |
+| `.u-as-baseline` | `align-self: baseline;`   |
+| `.u-as-stretch`  | `align-self: stretch;`    |
+
+
+```example:html
+<div class="flex">
+  <div class="u-fb1x u-as-start huge">start. also content to add height</div>
+  <div class="u-fb1x u-as-end">end</div>
+  <div class="u-fb1x u-as-center">center</div>
+  <div class="u-fb1x u-as-baseline">baseline</div>
+  <div class="u-fb1x u-as-stretch">stretch</div>
+</div>
+```
+
+
+*/
 @define-mixin align-self $resp {
   .u-as-start$(resp) {
     align-self: flex-start;

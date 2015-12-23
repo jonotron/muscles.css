@@ -1,6 +1,23 @@
-/**
- * order modifiers
- */
+/*---
+title:    order
+section:  Flex items
+---
+
+Use order utility classes to change the order of flex items from `-10` to `-1`
+and `0` to `10`.
+
+```example:html
+<div class="flex">
+  <div class="u-fb1x u-o1">dom:1, o1</div>
+  <div class="u-fb1x u-o5">dom:2, o5</div>
+  <div class="u-fb1x u-o1">dom:3, o1</div>
+  <div class="u-fb1x u-o10-">dom:4, o10-</div>
+  <div class="u-fb1x u-o5-">dom:5, o5-</div>
+</div>
+```
+
+*/
+
 @define-mixin order $resp {
   @for $i from 0 to 10 {
     .u-o$(i)$(resp) {
