@@ -25,6 +25,11 @@
 				</li>
 				
 				<li>
+					<a href="#justify-content"><span>justify-content</span></a>
+					
+				</li>
+				
+				<li>
 					<a href="#align-items"><span>align-items</span></a>
 					
 				</li>
@@ -78,6 +83,51 @@ within the <code>.flex</code> container.</p>
 <pre><code class="lang-example:html">&lt;div class=&quot;flex flex--row-reverse&quot;&gt;
   &lt;div&gt;1st item&lt;/div&gt;
   &lt;div&gt;2nd item&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+				
+			</div>
+		</section>
+		
+		<section id="justify-content">
+			<h3>justify-content</h3>
+			<div>
+				<p><code>justify-content</code> modifiers set where remaining space should be distributed
+among flex items in a <code>.flex</code> container.</p>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.flex--start</code></td>
+<td><code>justify-content: flex-start;</code></td>
+</tr>
+<tr>
+<td><code>.flex--end</code></td>
+<td><code>justify-content: flex-end;</code></td>
+</tr>
+<tr>
+<td><code>.flex--center</code></td>
+<td><code>justify-content: center;</code></td>
+</tr>
+<tr>
+<td><code>.flex--around</code></td>
+<td><code>justify-content: space-around;</code></td>
+</tr>
+<tr>
+<td><code>.flex--between</code></td>
+<td><code>justify-content: space-between;</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--around&quot;&gt;
+  &lt;div class=&quot;u-fb1x&quot;&gt;1x&lt;/div&gt;
+  &lt;div class=&quot;u-fb1x&quot;&gt;1x&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
@@ -218,7 +268,7 @@ that is purely for layout.</p>
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 10:45
+	<footer>Last modified Wednesday, 23 December 2015 10:50
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
