@@ -20,6 +20,11 @@
 				</li>
 				
 				<li>
+					<a href="#flex-wrap"><span>flex-wrap</span></a>
+					
+				</li>
+				
+				<li>
 					<a href="#flex-direction"><span>flex-direction</span></a>
 					
 				</li>
@@ -68,6 +73,47 @@ element that will be flexing.</p>
 <pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
   &lt;div class=&quot;u-fb1x&quot;&gt;1x&lt;/div&gt;
   &lt;div class=&quot;u-fb1x&quot;&gt;1x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+				
+			</div>
+		</section>
+		
+		<section id="flex-wrap">
+			<h3>flex-wrap</h3>
+			<div>
+				<p><code>flex-wrap</code> modifiers set how items that exceed the demensions of their axis
+are wrapped (or not wrapped).</p>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.flex--wrap</code></td>
+<td><code>flex-wrap: wrap;</code></td>
+</tr>
+<tr>
+<td><code>.flex--nowrap</code></td>
+<td><code>flex-wrap: nowrap;</code></td>
+</tr>
+<tr>
+<td><code>.flex--wrap-reverse</code></td>
+<td><code>flex-wrap: wrap-reverse;</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--wrap&quot;&gt;
+  &lt;div class=&quot;u-fb1x&quot;&gt;1x&lt;/div&gt;
+  &lt;div class=&quot;u-fb2x&quot;&gt;2x&lt;/div&gt;
+  &lt;div class=&quot;u-fb3x&quot;&gt;3x&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x&quot;&gt;4x&lt;/div&gt;
+  &lt;div class=&quot;u-fb5x&quot;&gt;5x&lt;/div&gt;
+  &lt;div class=&quot;u-fb6x&quot;&gt;6x&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
@@ -268,7 +314,7 @@ that is purely for layout.</p>
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 10:50
+	<footer>Last modified Wednesday, 23 December 2015 10:57
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
