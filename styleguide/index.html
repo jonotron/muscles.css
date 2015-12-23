@@ -84,6 +84,11 @@
 				</li>
 				
 				<li>
+					<a href="#width-and-height"><span>width and height</span></a>
+					
+				</li>
+				
+				<li>
 					<a href="#align-self"><span>align-self</span></a>
 					
 				</li>
@@ -540,6 +545,46 @@ eliminating the need to define separate rows.</p>
 			</div>
 		</section>
 		
+		<section id="width-and-height">
+			<h3>width and height</h3>
+			<div>
+				<p>In addition to <a href="#basis-length">length</a> and <a href="#basis-fractions">fractions</a> 
+Muscles.css also supports setting <code>width</code> and <code>height</code> properties as multiples</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--wrap&quot;&gt;
+  &lt;div class=&quot;u-w1x&quot;&gt;1x&lt;/div&gt;
+  &lt;div class=&quot;u-w2x&quot;&gt;2x&lt;/div&gt;
+  &lt;div class=&quot;u-w3x&quot;&gt;3x&lt;/div&gt;
+  &lt;div class=&quot;u-w4x&quot;&gt;4x&lt;/div&gt;
+  &lt;div class=&quot;u-w5x&quot;&gt;5x&lt;/div&gt;
+  &lt;div class=&quot;u-w6x&quot;&gt;6x&lt;/div&gt;
+  &lt;div class=&quot;u-w7x&quot;&gt;7x&lt;/div&gt;
+  &lt;div class=&quot;u-w8x&quot;&gt;8x&lt;/div&gt;
+  &lt;div class=&quot;u-w9x&quot;&gt;9x&lt;/div&gt;
+  &lt;div class=&quot;u-w10x&quot;&gt;10x&lt;/div&gt;
+  &lt;div class=&quot;u-w11x&quot;&gt;11x&lt;/div&gt;
+  &lt;div class=&quot;u-w12x&quot;&gt;12x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--wrap flex--column&quot;&gt;
+  &lt;div class=&quot;u-h1x u-w2x&quot;&gt;1x&lt;/div&gt;
+  &lt;div class=&quot;u-h2x u-w2x&quot;&gt;2x&lt;/div&gt;
+  &lt;div class=&quot;u-h3x u-w2x&quot;&gt;3x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Muscles.css also provides min/max width/height attributes which is very useful
+for UIs that should grow or shrink from their defaults but never more or less
+than certain extremes.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-min-w4x u-max-w5x u-fg1&quot;&gt;min:4x max:5x&lt;/div&gt;
+  &lt;div class=&quot;u-max-w1x u-fg1&quot;&gt;max:1x&lt;/div&gt;
+  &lt;div class=&quot;u-min-w3x u-fg1&quot;&gt;min:3x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+				
+			</div>
+		</section>
+		
 		<section id="align-self">
 			<h3>align-self</h3>
 			<div>
@@ -591,7 +636,7 @@ eliminating the need to define separate rows.</p>
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 14:01
+	<footer>Last modified Wednesday, 23 December 2015 14:13
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
