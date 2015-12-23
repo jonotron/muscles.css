@@ -64,6 +64,11 @@
 				</li>
 				
 				<li>
+					<a href="#basis-length"><span>basis length</span></a>
+					
+				</li>
+				
+				<li>
 					<a href="#basis-fractions"><span>basis fractions</span></a>
 					
 				</li>
@@ -360,6 +365,77 @@ E.g. <code>.u-fg5</code> sets <code>flex-grow: 5;</code></p>
 			</div>
 		</section>
 		
+		<section id="basis-length">
+			<h3>basis length</h3>
+			<div>
+				<p>Sometimes, you want to use actual lengths for your items (e.g. when styling 
+layout for UI components). Muscles.css provides basis modifiers that specify a 
+specific length basis as a multiple of a base unit. This provides consistency 
+in your items as needed across any container size.</p>
+<p>You can use <code>.u-fb3x</code> to set the flex-basis to 3*96px = 288px (the 
+default base unit is 96px). Muscles provides multiples from 1x (96px) to 12x 
+(1152px).</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-fb1x&quot;&gt;.u-fb1x&lt;/div&gt;
+  &lt;div class=&quot;u-fb2x&quot;&gt;.u-fb2x&lt;/div&gt;
+  &lt;div class=&quot;u-fb3x&quot;&gt;.u-fb3x&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x&quot;&gt;.u-fb4x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Just as with fractional widths, flex items default to <code>shrink: 1</code> so they will 
+always shrink if there is not enough room to contain them.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-fb8x&quot;&gt;.u-fb8x&lt;/div&gt;
+  &lt;div class=&quot;u-fb4x&quot;&gt;.u-fb4x&lt;/div&gt;
+  &lt;div class=&quot;u-fb6x&quot;&gt;.u-fb6x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Setting <code>.flex--wrap</code> will cause the items to wrap if there is not 
+enough room. Similar to fractional basis, it gives more consistency in flex 
+item widths.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex flex--wrap&quot;&gt;
+  &lt;div class=&quot;u-fb4x&quot;&gt;.u-fb4x&lt;/div&gt;
+  &lt;div class=&quot;u-fb5x&quot;&gt;.u-fb5x&lt;/div&gt;
+  &lt;div class=&quot;u-fb2x&quot;&gt;.u-fb2x&lt;/div&gt;
+  &lt;div class=&quot;u-fb3x&quot;&gt;.u-fb3x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="lengths-vs-fractions">Lengths vs Fractions</h4>
+<p>Lengths are useful when you have different sized containers and need to ensure 
+consistent widths for your items. Using fractions or percentages would makes 
+this impossible (or at least difficult). This would also apply when you use 
+nested containers.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-fb2/12&quot;&gt;2/12&lt;/div&gt;
+  &lt;div class=&quot;u-fb10/12&quot;&gt;10/12&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex container--80&quot;&gt;
+  &lt;div class=&quot;u-fb2/12&quot;&gt;2/12&lt;/div&gt;
+  &lt;div class=&quot;u-fb10/12&quot;&gt;10/12&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>In this example, in both cases each cell has the same fractional width but 
+they display at very different lengths due to the difference in the container 
+sizes. If you wanted those 2/12 cells to be the same computed length, you 
+can&#39;t use fractional or percentage widths.</p>
+<p>Instead, we can use length basis and set our element to not shrink.</p>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-fb2x u-fs0&quot;&gt;2x&lt;/div&gt;
+  &lt;div class=&quot;u-fb10x&quot;&gt;10x&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex container--80&quot;&gt;
+  &lt;div class=&quot;u-fb2x u-fs0&quot;&gt;2x&lt;/div&gt;
+  &lt;div class=&quot;u-fb10x&quot;&gt;10x&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>This forces the 2x element to always be 2x in width regardless of the 
+container width. You can use this do create very responsive UI without 
+breakpoints.</p>
+
+				
+			</div>
+		</section>
+		
 		<section id="basis-fractions">
 			<h3>basis fractions</h3>
 			<div>
@@ -470,7 +546,7 @@ eliminating the need to define separate rows.</p>
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 12:31
+	<footer>Last modified Wednesday, 23 December 2015 12:46
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
