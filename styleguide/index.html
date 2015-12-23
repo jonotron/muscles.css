@@ -53,6 +53,20 @@
 	
 				</li>
 				
+				<li>
+					<a href="#flex-items"><span>Flex items</span></a>
+					
+	<ul>
+		
+				<li>
+					<a href="#align-self"><span>align-self</span></a>
+					
+				</li>
+				
+	</ul>
+	
+				</li>
+				
 	</ul>
 	
 	</nav>
@@ -314,7 +328,63 @@ that is purely for layout.</p>
 			</div>
 		</section>
 		
-	<footer>Last modified Wednesday, 23 December 2015 10:57
+		<section id="flex-items">
+			<h2>Flex items</h2>
+			<div>
+				
+				
+		<section id="align-self">
+			<h3>align-self</h3>
+			<div>
+				<p><code>align-self</code> modifiers allow items to override any 
+<a href="#align-items"><code>align-items</code> modifer</a> set on the <code>.flex</code> container</p>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.u-as-start</code></td>
+<td><code>align-self: flex-start;</code></td>
+</tr>
+<tr>
+<td><code>.u-as-end</code></td>
+<td><code>align-self: flex-end;</code></td>
+</tr>
+<tr>
+<td><code>.u-as-center</code></td>
+<td><code>align-self: center;</code></td>
+</tr>
+<tr>
+<td><code>.u-as-baseline</code></td>
+<td><code>align-self: baseline;</code></td>
+</tr>
+<tr>
+<td><code>.u-as-stretch</code></td>
+<td><code>align-self: stretch;</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-example:html">&lt;div class=&quot;flex&quot;&gt;
+  &lt;div class=&quot;u-fb1x u-as-start huge&quot;&gt;start. also content to add height&lt;/div&gt;
+  &lt;div class=&quot;u-fb1x u-as-end&quot;&gt;end&lt;/div&gt;
+  &lt;div class=&quot;u-fb1x u-as-center&quot;&gt;center&lt;/div&gt;
+  &lt;div class=&quot;u-fb1x u-as-baseline&quot;&gt;baseline&lt;/div&gt;
+  &lt;div class=&quot;u-fb1x u-as-stretch&quot;&gt;stretch&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+				
+			</div>
+		</section>
+		
+			</div>
+		</section>
+		
+	<footer>Last modified Wednesday, 23 December 2015 11:02
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
