@@ -1,3 +1,20 @@
+/*---
+title: Responsive
+section: General
+---
+
+Most of the classes available in Muscles.css have responsive support. Simply
+use one of the responsive suffixes as needed: `@sm`, `@md`, or `@lg`.
+
+E.g. `.flex--wrap@md` will turn on wrap at the medium break point only
+
+Breakpoints currently supported:
+
+- `@sm` 320px - 640px
+- `@md` 640px - 960px
+- `@lg` 960px and up
+
+*/
 @custom-media --sm-viewport (min-width:320px) and (max-width:640px);
 @custom-media --md-viewport (min-width:640px) and (max-width:960px);
 @custom-media --lg-viewport (min-width:960px);
