@@ -36,6 +36,9 @@ If you need to add vertical gutter remember these things:
 - margins to not collapse in flex containers
 - `.flex` is difficult to style
 
+**Responsive**: Gutter does not currently support [responsive](#responsive)
+suffixes.
+
 */
 .flex--gutter {
   margin-left: -$muscles_base_gutter;
