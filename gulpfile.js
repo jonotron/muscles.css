@@ -13,6 +13,8 @@ gulp.task('css', function() {
     }
   };
   var processors = [
+    require('postcss-map')(opts),
+    require('postcss-conditionals'),
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-mixins'),
