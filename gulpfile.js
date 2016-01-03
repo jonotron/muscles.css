@@ -9,7 +9,11 @@ gulp.task('css', function() {
   var theme = {
     title: 'Muscles.css docs',
     examples: {
-      css: ['../dist/muscles.css']
+      css: [
+        '../dist/muscles.css', 
+        '../example/example.css', 
+        'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css'
+      ]
     }
   };
   var processors = [
