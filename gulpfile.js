@@ -12,6 +12,27 @@ gulp.task('css', function() {
       css: ['../dist/muscles.css']
     }
   };
+  var opts = {
+    maps: [{
+      defaultMap: {
+        modules: {
+          wrap:             true,
+          direction:        true,
+          justify:          true,
+          'align-items':    true,
+          'align-content':  true,
+          gutter:           true,
+          grow:             true,
+          shrink:           true,
+          order:            true,
+          length:           true,
+          fraction:         true,
+          width:            true,
+          'align-self':     true
+        } 
+      }
+    }],
+  };
   var processors = [
     require('postcss-map')(opts),
     require('postcss-conditionals'),

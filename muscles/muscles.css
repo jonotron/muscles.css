@@ -1,15 +1,54 @@
 @import "settings.css";
 @import "flexbox.css";
-@import "flexbox.wrap.css";
-@import "flexbox.direction.css";
-@import "flexbox.justify.css";
-@import "flexbox.align-items.css";
-@import "flexbox.align-content.css";
-@import "flexbox.gutter.css";
-@import "item.grow.css";
-@import "item.shrink.css";
-@import "item.order.css";
-@import "item.length.css";
-@import "item.fraction.css";
-@import "item.width.css";
-@import "item.align-self.css";
+
+@if map(modules, wrap) {
+  @import "flexbox.wrap.css";
+}  
+
+@if map(modules, direction) {
+  @import "flexbox.direction.css";
+}
+
+@if map(modules, justify) {
+  @import "flexbox.justify.css";
+}
+
+@if map(modules, align-items) {
+  @import "flexbox.align-items.css";
+}
+
+@if map(modules, align-content) {
+  @import "flexbox.align-content.css";
+}
+
+@if map(modules, gutter) {
+  @import "flexbox.gutter.css";
+}
+
+@if map(modules, grow) {
+  @import "item.grow.css";
+}
+
+@if map(modules, shrink) {
+  @import "item.shrink.css";
+}
+
+@if map(modules, order) {
+  @import "item.order.css";
+}
+
+@if map(modules, length) {
+  @import "item.length.css";
+}
+
+@if map(modules, fraction) {
+  @import "item.fraction.css";
+}
+
+@if map(modules, width) {
+  @import "item.width.css";
+}
+
+@if map(modules, align-self) {
+  @import "item.align-self.css";
+}
