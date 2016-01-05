@@ -1,0 +1,15 @@
+/* colorpallet http://paletton.com/#uid=33o0u0kllllaFw0g0qFqFg0w0aF */
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  background-color: #6B949F;
+}
+
+.flex > * {
+  background-color: #447684;
+  border: 1px solid #022A35;
+  color: #EEEEEE;
+
+}
