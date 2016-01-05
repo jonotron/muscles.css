@@ -19,8 +19,8 @@ gulp.task('css', function() {
           wrap:             true,
           direction:        true,
           justify:          true,
-          'align-items':    true,
-          'align-content':  true,
+          alignItems:    true,
+          alignContent:  true,
           gutter:           true,
           grow:             true,
           shrink:           true,
@@ -28,7 +28,7 @@ gulp.task('css', function() {
           length:           true,
           fraction:         true,
           width:            true,
-          'align-self':     true
+          alignSelf:     true
         } 
       }
     }],

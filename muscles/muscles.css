@@ -13,11 +13,11 @@
   @import "flexbox.justify.css";
 }
 
-@if map(modules, align-items) {
+@if map(modules, alignItems) {
   @import "flexbox.align-items.css";
 }
 
-@if map(modules, align-content) {
+@if map(modules, alignContent) {
   @import "flexbox.align-content.css";
 }
 
@@ -49,6 +49,6 @@
   @import "item.width.css";
 }
 
-@if map(modules, align-self) {
+@if map(modules, alignSelf) {
   @import "item.align-self.css";
 }
