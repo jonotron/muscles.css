@@ -14,11 +14,11 @@
 }
 
 @if map(modules, alignItems) {
-  @import "flexbox.align-items.css";
+  @import "flexbox.alignItems.css";
 }
 
 @if map(modules, alignContent) {
-  @import "flexbox.align-content.css";
+  @import "flexbox.alignContent.css";
 }
 
 @if map(modules, gutter) {
@@ -50,5 +50,5 @@
 }
 
 @if map(modules, alignSelf) {
-  @import "item.align-self.css";
+  @import "item.alignSelf.css";
 }
