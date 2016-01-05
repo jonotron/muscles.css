@@ -16,7 +16,30 @@ gulp.task('css', function() {
       ]
     }
   };
+  var opts = {
+    maps: [{
+      defaultMap: {
+        modules: {
+          wrap:             true,
+          direction:        true,
+          justify:          true,
+          alignItems:    true,
+          alignContent:  true,
+          gutter:           true,
+          grow:             true,
+          shrink:           true,
+          order:            true,
+          length:           true,
+          fraction:         true,
+          width:            true,
+          alignSelf:     true
+        } 
+      }
+    }],
+  };
   var processors = [
+    require('postcss-map')(opts),
+    require('postcss-conditionals'),
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-mixins'),
