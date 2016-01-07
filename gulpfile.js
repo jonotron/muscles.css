@@ -23,7 +23,6 @@ var opts = {
   }],
 };
 
-
 gulp.task('css', function() {
   var vars = {
     muscles_base_basis: '96px',
@@ -72,4 +71,6 @@ gulp.task('mdcss', function() {
   return gulp.src('muscles/muscles.css')
     .pipe(postcss(processors));
 });
+
+gulp.task('default', ['css', 'mdcss']);
 
