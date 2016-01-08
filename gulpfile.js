@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
+var nano = require('gulp-cssnano');
+var rename = require('gulp-rename');
 
 var opts = {
   maps: [{
@@ -44,6 +46,13 @@ gulp.task('css', function() {
   return gulp.src('muscles/muscles.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('min', ['css'], function() {
+  return gulp.src('dist/muscles.css')
+    .pipe(nano())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('mdcss', function() {
