@@ -24,5 +24,8 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 
+# mdcss generated docs should be stored in gh-pages
+styleguide
+
 # Users Environment Variables
 .lock-wscript
