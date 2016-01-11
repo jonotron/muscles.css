@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var nano = require('gulp-cssnano');
 var rename = require('gulp-rename');
+var del = require('del');
 
 var opts = {
   maps: [{
@@ -25,7 +26,11 @@ var opts = {
   }],
 };
 
-gulp.task('css', function() {
+gulp.task('clean:css', function() {
+  return del(['dist/*.css']);
+})
+
+gulp.task('css', ['clean:css'], function() {
   var vars = {
     muscles_base_basis: '96px',
     muscles_base_gutter: '12px'
