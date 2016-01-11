@@ -69,6 +69,8 @@ eliminating the need to define separate rows.
     
 */
 
+@import "settings.css";
+
 @define-mixin u-fraction $resp {
   @for $i from 1 to 12 {
     .u-fb$(i)\/12$(resp) {

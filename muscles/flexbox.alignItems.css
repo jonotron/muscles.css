@@ -23,6 +23,9 @@ the cross axis
 ```
 
 */
+
+@import "settings.css";
+
 @define-mixin align-items $resp {
   .flex--ai-start$(resp) {
     align-items: flex-start;

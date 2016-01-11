@@ -17,6 +17,8 @@ E.g. `.u-fg5` sets `flex-grow: 5;`
 
 */
 
+@import "settings.css";
+
 @define-mixin grow $resp {
   @for $i from 0 to 8 {
     .u-fg$(i)$(resp) {

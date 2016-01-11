@@ -17,6 +17,8 @@ shrink utility classes. You can set shrink from `0` to `8`.
 
 */
 
+@import "settings.css";
+
 @define-mixin shrink $resp {
   @for $i from 0 to 8 {
     .u-fs$(i)$(resp) {

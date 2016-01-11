@@ -1,0 +1,188 @@
+.u-fg0 {
+
+    flex-grow: 0
+}
+
+.u-fg1 {
+
+    flex-grow: 1
+}
+
+.u-fg2 {
+
+    flex-grow: 2
+}
+
+.u-fg3 {
+
+    flex-grow: 3
+}
+
+.u-fg4 {
+
+    flex-grow: 4
+}
+
+.u-fg5 {
+
+    flex-grow: 5
+}
+
+.u-fg6 {
+
+    flex-grow: 6
+}
+
+.u-fg7 {
+
+    flex-grow: 7
+}
+
+.u-fg8 {
+
+    flex-grow: 8
+}
+
+@media (min-width:320px) and (max-width:640px) {
+
+    .u-fg0\@sm {
+
+        flex-grow: 0
+    }
+
+    .u-fg1\@sm {
+
+        flex-grow: 1
+    }
+
+    .u-fg2\@sm {
+
+        flex-grow: 2
+    }
+
+    .u-fg3\@sm {
+
+        flex-grow: 3
+    }
+
+    .u-fg4\@sm {
+
+        flex-grow: 4
+    }
+
+    .u-fg5\@sm {
+
+        flex-grow: 5
+    }
+
+    .u-fg6\@sm {
+
+        flex-grow: 6
+    }
+
+    .u-fg7\@sm {
+
+        flex-grow: 7
+    }
+
+    .u-fg8\@sm {
+
+        flex-grow: 8
+    }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+
+    .u-fg0\@md {
+
+        flex-grow: 0
+    }
+
+    .u-fg1\@md {
+
+        flex-grow: 1
+    }
+
+    .u-fg2\@md {
+
+        flex-grow: 2
+    }
+
+    .u-fg3\@md {
+
+        flex-grow: 3
+    }
+
+    .u-fg4\@md {
+
+        flex-grow: 4
+    }
+
+    .u-fg5\@md {
+
+        flex-grow: 5
+    }
+
+    .u-fg6\@md {
+
+        flex-grow: 6
+    }
+
+    .u-fg7\@md {
+
+        flex-grow: 7
+    }
+
+    .u-fg8\@md {
+
+        flex-grow: 8
+    }
+}
+
+@media (min-width:960px) {
+
+    .u-fg0\@lg {
+
+        flex-grow: 0
+    }
+
+    .u-fg1\@lg {
+
+        flex-grow: 1
+    }
+
+    .u-fg2\@lg {
+
+        flex-grow: 2
+    }
+
+    .u-fg3\@lg {
+
+        flex-grow: 3
+    }
+
+    .u-fg4\@lg {
+
+        flex-grow: 4
+    }
+
+    .u-fg5\@lg {
+
+        flex-grow: 5
+    }
+
+    .u-fg6\@lg {
+
+        flex-grow: 6
+    }
+
+    .u-fg7\@lg {
+
+        flex-grow: 7
+    }
+
+    .u-fg8\@lg {
+
+        flex-grow: 8
+    }
+}

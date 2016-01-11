@@ -26,6 +26,8 @@ makes sense to use in a wrapped container (`.flex--wrap`)
 
 */
 
+@import "settings.css";
+
 @define-mixin align-content $resp {
   .flex--ac-start$(resp) {
     align-content: flex-start;

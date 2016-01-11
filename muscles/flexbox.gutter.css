@@ -40,6 +40,9 @@ If you need to add vertical gutter remember these things:
 suffixes.
 
 */
+
+@import "settings.css";
+
 .flex--gutter {
   margin-left: -$muscles_base_gutter;
   margin-bottom: $muscles_base_gutter;

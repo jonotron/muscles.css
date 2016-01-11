@@ -27,6 +27,9 @@ section:  Flex items
 
 
 */
+
+@import "settings.css";
+
 @define-mixin align-self $resp {
   .u-as-start$(resp) {
     align-self: flex-start;

@@ -1,0 +1,108 @@
+.flex--start {
+
+    justify-content: flex-start
+}
+
+.flex--end {
+
+    justify-content: flex-end
+}
+
+.flex--center {
+
+    justify-content: center
+}
+
+.flex--around {
+
+    justify-content: space-around
+}
+
+.flex--between {
+
+    justify-content: space-between
+}
+
+@media (min-width:320px) and (max-width:640px) {
+
+    .flex--start\@sm {
+
+        justify-content: flex-start
+    }
+
+    .flex--end\@sm {
+
+        justify-content: flex-end
+    }
+
+    .flex--center\@sm {
+
+        justify-content: center
+    }
+
+    .flex--around\@sm {
+
+        justify-content: space-around
+    }
+
+    .flex--between\@sm {
+
+        justify-content: space-between
+    }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+
+    .flex--start\@md {
+
+        justify-content: flex-start
+    }
+
+    .flex--end\@md {
+
+        justify-content: flex-end
+    }
+
+    .flex--center\@md {
+
+        justify-content: center
+    }
+
+    .flex--around\@md {
+
+        justify-content: space-around
+    }
+
+    .flex--between\@md {
+
+        justify-content: space-between
+    }
+}
+
+@media (min-width:960px) {
+
+    .flex--start\@lg {
+
+        justify-content: flex-start
+    }
+
+    .flex--end\@lg {
+
+        justify-content: flex-end
+    }
+
+    .flex--center\@lg {
+
+        justify-content: center
+    }
+
+    .flex--around\@lg {
+
+        justify-content: space-around
+    }
+
+    .flex--between\@lg {
+
+        justify-content: space-between
+    }
+}
