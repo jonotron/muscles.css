@@ -18,6 +18,8 @@ and `0` to `10`.
 
 */
 
+@import "settings.css";
+
 @define-mixin order $resp {
   @for $i from 0 to 10 {
     .u-o$(i)$(resp) {

@@ -93,6 +93,8 @@ breakpoints.
 
 */
 
+@import "settings.css";
+
 @define-mixin lengthMultiple $resp {
   @for $i from 1 to 12 {
     .u-fb$(i)x$(resp) {

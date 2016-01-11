@@ -22,6 +22,9 @@ among flex items in a `.flex` container.
 ```
 
 */
+
+@import "settings.css";
+
 @define-mixin justify-content $resp {
   .flex--start$(resp) {
     justify-content: flex-start; 

@@ -24,6 +24,9 @@ are wrapped (or not wrapped).
 ```
 
 */
+
+@import "settings.css";
+
 @define-mixin wrap $resp {
   .flex--wrap$(resp) {
     flex-wrap: wrap;

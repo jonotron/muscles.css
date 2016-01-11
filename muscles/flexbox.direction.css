@@ -14,6 +14,9 @@ within the `.flex` container.
 ```
 
 */
+
+@import "settings.css";
+
 @define-mixin direction $resp {
   .flex--row$(resp) {
     flex-direction: row;

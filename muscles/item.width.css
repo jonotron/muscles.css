@@ -45,6 +45,8 @@ than certain extremes.
 
 */
 
+@import "settings.css";
+
 @define-mixin widthMultiple $resp {
   @for $i from 1 to 12 {
     .u-w$(i)x$(resp) {
