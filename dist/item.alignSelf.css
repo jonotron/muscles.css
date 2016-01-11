@@ -1,0 +1,108 @@
+.u-as-start {
+
+    align-self: flex-start
+}
+
+.u-as-end {
+
+    align-self: flex-end
+}
+
+.u-as-center {
+
+    align-self: center
+}
+
+.u-as-baseline {
+
+    align-self: baseline
+}
+
+.u-as-stretch {
+
+    align-self: stretch
+}
+
+@media(min-width:320px) and (max-width:640px) {
+
+    .u-as-start\@sm {
+
+        align-self: flex-start
+    }
+
+    .u-as-end\@sm {
+
+        align-self: flex-end
+    }
+
+    .u-as-center\@sm {
+
+        align-self: center
+    }
+
+    .u-as-baseline\@sm {
+
+        align-self: baseline
+    }
+
+    .u-as-stretch\@sm {
+
+        align-self: stretch
+    }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+
+    .u-as-start\@md {
+
+        align-self: flex-start
+    }
+
+    .u-as-end\@md {
+
+        align-self: flex-end
+    }
+
+    .u-as-center\@md {
+
+        align-self: center
+    }
+
+    .u-as-baseline\@md {
+
+        align-self: baseline
+    }
+
+    .u-as-stretch\@md {
+
+        align-self: stretch
+    }
+}
+
+@media (min-width:960px) {
+
+    .u-as-start\@lg {
+
+        align-self: flex-start
+    }
+
+    .u-as-end\@lg {
+
+        align-self: flex-end
+    }
+
+    .u-as-center\@lg {
+
+        align-self: center
+    }
+
+    .u-as-baseline\@lg {
+
+        align-self: baseline
+    }
+
+    .u-as-stretch\@lg {
+
+        align-self: stretch
+    }
+}
