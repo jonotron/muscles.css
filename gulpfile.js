@@ -43,13 +43,13 @@ gulp.task('css', function() {
     require('css-mqpacker')
   ];
 
-  return gulp.src('muscles/muscles.css')
+  return gulp.src('muscles/*.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('min', ['css'], function() {
-  return gulp.src('dist/muscles.css')
+  return gulp.src('dist/*.css')
     .pipe(nano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist/'))
