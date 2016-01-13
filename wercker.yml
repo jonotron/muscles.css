@@ -4,3 +4,8 @@ build:
     - npm-install
     - hgen/gulp:
       tasks: mdcss
+deploy:
+  steps:
+    - uetchy/gh-pages:
+        token: $GITHUB_TOKEN
+        repo: jonotron/muscles.css
