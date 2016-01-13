@@ -2,7 +2,5 @@ box: node
 build:
   steps:
     - npm-install
-    - script:
-        name: compile mdcss
-        code: |
-          npm run mdcss 
+    - hgen/gulp:
+      tasks: mdcss
