@@ -2,6 +2,8 @@
 
 remote="git@github.com:/jonotron/muscles.css.git"
 
+git config --global user.email "pleasemailus@wercker.com"
+git config --global user.name "werckerbot"
 git checkout gh-pages
 git merge master
 gulp mdcss
