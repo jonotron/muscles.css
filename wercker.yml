@@ -6,6 +6,6 @@ build:
       tasks: mdcss
 deploy:
   steps:
-    - uetchy/gh-pages:
-        token: $GITHUB_TOKEN
-        repo: jonotron/muscles.css
+    - script:
+        name: deploy gh-pages
+        code: ./bin/gh-pages.sh
