@@ -9,7 +9,7 @@ git add .
 git commit -m "deploy from $WERCKER_STARTED_BY"
 result="$(git push -f $remote gh-pages:gh-pages)"
 
-if [[ $? -ne 0]]
+if [[ $? -ne 0 ]]
 then
   warning "$result"
   fail "failed pushing to github pages"
