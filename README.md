@@ -23,10 +23,10 @@ that can be quickly added to your html.
 * be usable for general page/app layout and specific ui/component layout
 * use modular approach to css class names
 
-Examples
---------
+Documentation
+-------------
 
-See the documentation: http://jonotron.github.io/muscles.css/styleguide/
+See the documentation: http://jonotron.github.io/muscles.css
 
 Recommended Reading
 -------------------
