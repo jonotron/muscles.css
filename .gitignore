@@ -26,3 +26,6 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# gh-pages directory, built by gulp pushed to gh-pages
+gh-pages

@@ -60,13 +60,18 @@ gulp.task('min', ['css'], function() {
     .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('mdcss', function() {
+gulp.task('mdcss-support', ['css'], function() {
+  return gulp.src(['dist/muscles.css', 'example/example.css'])
+  .pipe(gulp.dest('gh-pages'))
+});
+
+gulp.task('mdcss', ['mdcss-support'], function() {
   var theme = {
     title: 'Muscles.css docs',
     examples: {
       css: [
-        '../dist/muscles.css', 
-        '../example/example.css', 
+        './muscles.css', 
+        './example.css', 
         'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css'
       ]
     }
@@ -77,7 +82,8 @@ gulp.task('mdcss', function() {
     require('postcss-conditionals'),
     require('postcss-import'),
     require('mdcss')({
-      theme: require('mdcss-theme-github')(theme)
+      theme: require('mdcss-theme-github')(theme),
+      destination: 'gh-pages'
     }),
     require('postcss-discard-comments')
   ]
