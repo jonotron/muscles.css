@@ -9,3 +9,4 @@ deploy:
     - uetchy/gh-pages:
         token: $GITHUB_TOKEN
         repo: jonotron/muscles.css
+        path: gh-pages
