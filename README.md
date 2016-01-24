@@ -35,9 +35,4 @@ Recommended Reading
 
 [More transparent UI code with namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) introduces the concept of CSS class namespaces (e.g. the utility namespace used frequently in muscles.css)
 
-Todo
-----
 
-Obviously this needs more documentation, but you can try it out by including
-the `dist/muscles.css` file in your html page (see `example/index.html`) for
-some usage examples.
