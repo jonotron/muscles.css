@@ -61,13 +61,14 @@ gulp.task('min', ['css'], function() {
 });
 
 gulp.task('mdcss-support', ['css'], function() {
-  return gulp.src(['dist/muscles.css', 'example/example.css'])
+  return gulp.src(['dist/muscles.css', 'example/example.css', 'assets/*'])
   .pipe(gulp.dest('gh-pages'))
 });
 
 gulp.task('mdcss', ['mdcss-support'], function() {
   var theme = {
     title: 'Muscles.css docs',
+    logo: 'logo_full.png',
     examples: {
       css: [
         './muscles.css', 
