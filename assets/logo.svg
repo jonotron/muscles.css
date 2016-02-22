@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Logo" sketch:type="MSArtboardGroup">
+            <g id="Muscles-Logo" sketch:type="MSLayerGroup">
+                <rect id="Rectangle-1" fill="#F1F1F1" sketch:type="MSShapeGroup" x="0" y="0" width="152" height="152"></rect>
+                <path d="M0,152 L152,0 L152,152 L0,152 Z" id="Path-1" fill="#EEA9D0" sketch:type="MSShapeGroup" transform="translate(76.000000, 76.000000) scale(-1, 1) translate(-76.000000, -76.000000) "></path>
+                <path d="M0,152 L152,0 L152,152 L0,152 Z" id="Path-3" fill="#B7337E" sketch:type="MSShapeGroup"></path>
+                <path d="M0,152 L76,0 L76,152 L0,152 Z" id="Path-2" fill="#DE78B2" sketch:type="MSShapeGroup" transform="translate(38.000000, 76.000000) scale(-1, 1) translate(-38.000000, -76.000000) "></path>
+                <path d="M76,152 L152,0 L152,152 L76,152 Z" id="Path-4" fill="#9A1761" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
