@@ -14,6 +14,11 @@ inuit style css.
 **Disclaimer**: This is very much a work in progress and I do not recommend
 using it in production just yet.
 
+Installation
+------------
+
+    npm install musclescss
+
 Goals
 -----
 

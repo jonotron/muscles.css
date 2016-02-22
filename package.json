@@ -1,8 +1,7 @@
 {
-  "name": "muscles.css",
+  "name": "musclescss",
   "version": "0.0.1",
   "description": "a flexbox based modular layout css toolkit",
-  "main": "gulpfile.js",
   "directories": {
     "example": "example"
   },
@@ -32,6 +31,8 @@
     "type": "git",
     "url": "https://github.com//jonotron/muscles.css.git"
   },
+  "bugs": "https://github.com/jonotron/muscles.css/issues",
+  "homepage": "https://github.com/jonotron/muscles.css",
   "keywords": [
     "css",
     "flexbox"
