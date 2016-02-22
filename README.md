@@ -1,6 +1,6 @@
 [![wercker status](https://app.wercker.com/status/83e89681dd1417c2535c3573b30f2579/s/master "wercker status")](https://app.wercker.com/project/bykey/83e89681dd1417c2535c3573b30f2579)
 
-![Muscles.css logo](assets/logo.png)
+![Muscles.css logo](https://github.com/jonotron/muscles.css/raw/master/assets/logo.png)
 
 muscles.css
 ===========
