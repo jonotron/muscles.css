@@ -65,7 +65,7 @@ gulp.task('mdcss-support', ['css'], function() {
   .pipe(gulp.dest('gh-pages'))
 });
 
-gulp.task('mdcss', ['mdcss-support'], function() {
+gulp.task('mdcss', function() {
   var theme = {
     title: 'Muscles.css docs',
     logo: 'logo_full.png',
@@ -93,5 +93,7 @@ gulp.task('mdcss', ['mdcss-support'], function() {
     .pipe(postcss(processors));
 });
 
-gulp.task('default', ['css', 'mdcss']);
+gulp.task('docs', ['mdcss', 'mdcss-support'])
+
+gulp.task('default', ['css', 'docs']);
 

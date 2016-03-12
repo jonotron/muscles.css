@@ -3,7 +3,7 @@ build:
   steps:
     - npm-install
     - hgen/gulp:
-      tasks: mdcss
+      tasks: docs
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
