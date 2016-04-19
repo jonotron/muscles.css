@@ -25,6 +25,7 @@
     "postcss-simple-vars": "^1.1.0"
   },
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
