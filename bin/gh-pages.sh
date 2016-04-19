@@ -8,6 +8,8 @@ cd gh-pages
 rm -rf .git
 git init
 
+git config user.email "jonotron@gmail.com"
+git config user.name "Semaphore CI Bot"
 git add .
 git commit -m "deploy new gh-pages"
 result="$(git push -f git@github.com:/jonotron/muscles.css.git master:gh-pages)"
