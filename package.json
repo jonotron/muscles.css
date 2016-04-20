@@ -1,6 +1,6 @@
 {
   "name": "musclescss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a flexbox based modular layout css toolkit",
   "directories": {
     "example": "example"
