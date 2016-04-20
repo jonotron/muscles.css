@@ -77,8 +77,7 @@ eliminating the need to define separate rows.
   .u-fb3\/3$(resp),
   .u-fb4\/4$(resp),
   .u-fb6\/6$(resp),
-  .u-fb12\/12$(resp),
-  {
+  .u-fb12\/12$(resp) {
     flex-basis: 100%;
   }
 
@@ -87,8 +86,7 @@ eliminating the need to define separate rows.
   .flex--gutter > .u-fb3\/3$(resp),
   .flex--gutter > .u-fb4\/4$(resp),
   .flex--gutter > .u-fb6\/6$(resp),
-  .flex--gutter > .u-fb12\/12$(resp),
-  {
+  .flex--gutter > .u-fb12\/12$(resp) {
     flex-basis: calc(100% - $muscles_base_gutter);
   }
 

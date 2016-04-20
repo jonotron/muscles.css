@@ -360,7 +360,7 @@
   .u-fb3\/3,
   .u-fb4\/4,
   .u-fb6\/6,
-  .u-fb12\/12,{
+  .u-fb12\/12{
   flex-basis:100%;
 }
 
@@ -369,7 +369,7 @@
   .flex--gutter > .u-fb3\/3,
   .flex--gutter > .u-fb4\/4,
   .flex--gutter > .u-fb6\/6,
-  .flex--gutter > .u-fb12\/12,{
+  .flex--gutter > .u-fb12\/12{
   flex-basis:calc(100% - 12px);
 }
 
@@ -1142,7 +1142,7 @@
   .u-fb3\/3\@sm,
   .u-fb4\/4\@sm,
   .u-fb6\/6\@sm,
-  .u-fb12\/12\@sm,{
+  .u-fb12\/12\@sm{
     flex-basis:100%;
   }
 
@@ -1151,7 +1151,7 @@
   .flex--gutter > .u-fb3\/3\@sm,
   .flex--gutter > .u-fb4\/4\@sm,
   .flex--gutter > .u-fb6\/6\@sm,
-  .flex--gutter > .u-fb12\/12\@sm,{
+  .flex--gutter > .u-fb12\/12\@sm{
     flex-basis:calc(100% - 12px);
   }
 
@@ -1925,7 +1925,7 @@
   .u-fb3\/3\@md,
   .u-fb4\/4\@md,
   .u-fb6\/6\@md,
-  .u-fb12\/12\@md,{
+  .u-fb12\/12\@md{
     flex-basis:100%;
   }
 
@@ -1934,7 +1934,7 @@
   .flex--gutter > .u-fb3\/3\@md,
   .flex--gutter > .u-fb4\/4\@md,
   .flex--gutter > .u-fb6\/6\@md,
-  .flex--gutter > .u-fb12\/12\@md,{
+  .flex--gutter > .u-fb12\/12\@md{
     flex-basis:calc(100% - 12px);
   }
 
@@ -2708,7 +2708,7 @@
   .u-fb3\/3\@lg,
   .u-fb4\/4\@lg,
   .u-fb6\/6\@lg,
-  .u-fb12\/12\@lg,{
+  .u-fb12\/12\@lg{
     flex-basis:100%;
   }
 
@@ -2717,7 +2717,7 @@
   .flex--gutter > .u-fb3\/3\@lg,
   .flex--gutter > .u-fb4\/4\@lg,
   .flex--gutter > .u-fb6\/6\@lg,
-  .flex--gutter > .u-fb12\/12\@lg,{
+  .flex--gutter > .u-fb12\/12\@lg{
     flex-basis:calc(100% - 12px);
   }
 
