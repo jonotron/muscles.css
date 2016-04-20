@@ -1,4 +1,4 @@
-[![wercker status](https://app.wercker.com/status/83e89681dd1417c2535c3573b30f2579/s/master "wercker status")](https://app.wercker.com/project/bykey/83e89681dd1417c2535c3573b30f2579)
+[![Build Status](https://semaphoreci.com/api/v1/jonotron/muscles-css/branches/master/shields_badge.svg)](https://semaphoreci.com/jonotron/muscles-css)
 
 ![Muscles.css logo](https://github.com/jonotron/muscles.css/raw/master/assets/logo.png)
 
