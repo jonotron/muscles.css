@@ -95,5 +95,5 @@ gulp.task('mdcss', function() {
 
 gulp.task('docs', ['mdcss', 'mdcss-support'])
 
-gulp.task('default', ['css', 'docs']);
+gulp.task('default', ['min', 'docs']);
 
